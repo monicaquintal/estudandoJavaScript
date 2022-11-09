@@ -21,7 +21,6 @@ O JS permite aplicar dinâmica aos elementos da página web!
 
 Por fim, JS é uma linguagem de programação interpretada; os scripts são encaminhados ao browser, que os interpretará.
 
-<hr>
 
 <div id="#aula02" align="center">
 <h2>Aula 02: Incluindo JavaScript em páginas HTML5 (parte 01) - Introdução e preparação.</h2>
@@ -32,12 +31,16 @@ Por fim, JS é uma linguagem de programação interpretada; os scripts são enca
 Há duas formas:
 
 1. incluindo a codificação JS diretamente:
-  &lt;script&gt;
+  ```
+  <script>
   // aqui fica a codificação JavaScript 
-  &lt;/script&gt;
+  </script>
+  ``` 
 
 2. a partir de um arquivo externo:
-  &lt;script src="meu_script.js"&gt;&lt;/script&gt;
+  ```
+  <script src="meu_script.js"></script>
+  ```
 
 Caso a codificação seja muito extensa, compartimentalizar o código criando um arquivo à parte. Caso sejam blocos pequenos de codificação em JS, inserir diretamente no código.
 
@@ -48,8 +51,22 @@ Na versão 4 do HTML, utilizava-se também "type"; atualmente, podemos omitir es
 Realizada a criação do arquivo index.html.
 que os interpretará.
 
-<hr>
 
 <div id="#aula03" align="center">
 <h2>Aula 03: Incluindo JavaScript em páginas HTML5 (parte 02) - Local e Externo.</h2>
+</div>
+
+### Incluindo JavaScript diretamente em index.html:
+
+A tag &lt;script&gt; pode ser inserida no head ou no body. A diferença é que as instruções na tag head são processadas antes do carregamento do body (pode gerar um erro de precedência de interpretação).
+
+### Incluindo JavaScript em um arquivo externo:
+
+1. criar um novo arquivo (script.js);
+2. inserir o conteúdo no arquivo script.js;
+3. importar o script no arquivo index.html (no head ou no body).
+
+
+<div id="#aula04" align="center">
+<h2>Aula 04: Incluindo JavaScript em páginas HTML5 (parte 03) - Precedência de execução.</h2>
 </div>

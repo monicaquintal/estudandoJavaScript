@@ -158,9 +158,11 @@ var teste = true
 ```
 
 Observação:
-Utilizar a *função alert()* para verificar os valores inseridos em cada uma das variáveis.
-A função *document.write()* é um método pelo qual podemos escrever valores dentro do browser.
-O comando *console.log()* também é utilizado para debug, pois processa a página e, no ponto desse comando, imprime no console o valor da variável (permite acompanhar como uma variável está evoluindo ao longo do código).
+Utilizar a **função alert()** para verificar os valores inseridos em cada uma das variáveis.
+
+A função **document.write()** é um método pelo qual podemos escrever valores dentro do browser.
+
+O comando **console.log()** também é utilizado para debug, pois processa a página e, no ponto desse comando, imprime no console o valor da variável (permite acompanhar como uma variável está evoluindo ao longo do código).
 
 
 <div id="aula08" align="center">

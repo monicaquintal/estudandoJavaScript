@@ -1,9 +1,11 @@
-alert('Olá, Mundo!')
-
 // comentário de uma linha
 
-/* comentário
+/* 
+comentário
 de múltiplas
-linhas */
+linhas 
+
+alert('Olá, Mundo!')
+*/
 
 document.getElementById('nome').value = 'Oi'

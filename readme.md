@@ -10,13 +10,14 @@
 <a href="#aula04">Precedência de execução</a> |  
 <a href="#aula05">Comentários</a> | 
 <a href="#aula06">Variáveis (introdução)</a> | 
-<a href="#aula76">Variáveis (prática)</a> | 
+<a href="#aula07">Variáveis (prática)</a> | 
+<a href="#aula08">Concatenação</a> | 
 
 </div>
 
 <hr>
 
-<div id="#aula01" align="center">
+<div id="aula01" align="center">
 <h2>Aula 01: O que é JavaScript?</h2>
 </div>
 
@@ -31,7 +32,7 @@ O JS permite aplicar dinâmica aos elementos da página web!
 Por fim, JS é uma linguagem de programação interpretada; os scripts são encaminhados ao browser, que os interpretará.
 
 
-<div id="#aula02" align="center">
+<div id="aula02" align="center">
 <h2>Aula 02: Incluindo JavaScript em páginas HTML5 (parte 01) - Introdução e preparação.</h2>
 </div>
 
@@ -61,7 +62,7 @@ Realizada a criação do arquivo index.html.
 que os interpretará.
 
 
-<div id="#aula03" align="center">
+<div id="aula03" align="center">
 <h2>Aula 03: Incluindo JavaScript em páginas HTML5 (parte 02) - Local e Externo.</h2>
 </div>
 
@@ -76,7 +77,7 @@ A tag &lt;script&gt; pode ser inserida no head ou no body. A diferença é que a
 3. importar o script no arquivo index.html (no head ou no body).
 
 
-<div id="#aula04" align="center">
+<div id="aula04" align="center">
 <h2>Aula 04: Incluindo JavaScript em páginas HTML5 (parte 03) - Precedência de execução.</h2>
 </div>
 
@@ -89,7 +90,7 @@ Os elementos HTML são renderizados de acordo com a DOM, podendo ser selecionado
 Avaliar a ordem de disposição: o scrip executado antes do elemento referenciado/novo fará com que o JS não encontre o elemento e não execute a operação solicitada.
 
 
-<div id="#aula05" align="center">
+<div id="aula05" align="center">
 <h2>Aula 05: Comentários.</h2>
 </div>
 
@@ -109,7 +110,7 @@ encapsuladas em um mesmo comentário.
 ```
 
 
-<div id="#aula06" align="center">
+<div id="aula06" align="center">
 <h2>Aula 06: Variáveis - introdução.</h2>
 </div>
 
@@ -134,3 +135,34 @@ São espaços na memória que possibilitam armazenar informações de forma temp
 
 ### Case sensitive:
 O JS faz a diferenciação entre letras maiúsculas e minúsculas.
+
+
+<div id="aula07" align="center">
+<h2>Aula 07: Variáveis - prática.</h2>
+</div>
+
+a. string: usar aspas duplas ou simples.
+```
+var texto = "Curso de JavaScript"
+```
+
+b. number: Int, Float, Double
+```
+var numeroInteiro = -7
+var numeroFracionado = 123.45
+```
+
+c. boolean: estruturas condicionais (true e false)
+```
+var teste = true
+```
+
+Observação:
+Utilizar a *função alert()* para verificar os valores inseridos em cada uma das variáveis.
+A função *document.write()* é um método pelo qual podemos escrever valores dentro do browser.
+O comando *console.log()* também é utilizado para debug, pois processa a página e, no ponto desse comando, imprime no console o valor da variável (permite acompanhar como uma variável está evoluindo ao longo do código).
+
+
+<div id="aula08" align="center">
+<h2>Aula 08: Concatenação.</h2>
+</div>

@@ -3,6 +3,9 @@
 <h2>Estudando JavaScript 📒</h2>
 <h3>Seção 8: JavaScript</h3>
 <p>Curso Desenvolvimento Web Completo 2022</p>
+
+[O que é JS?](#aula01) | [Introdução](#aula02) | [Local e Externo](#aula03) | [Precedência de execução](#aula04) | [Comentários](#aula05) | [Váriáveis](#aula06) |
+
 </div>
 
 <hr>
@@ -84,3 +87,22 @@ Avaliar a ordem de disposição: o scrip executado antes do elemento referenciad
 <h2>Aula 05: Comentários.</h2>
 </div>
 
+Auxilia a compreensão da lógica aplicada, e a compreensão do mesmo por terceiros.
+
+1. Comentário de uma linha:
+```
+//comentário de uma linha
+```
+
+2. Comentário de múltiplas linhas:
+```
+/* 
+Permite que várias linhas sejam 
+encapsuladas em um mesmo comentário.
+*/
+```
+
+
+<div id="#aula06" align="center">
+<h2>Aula 06: Variáveis - introdução.</h2>
+</div>

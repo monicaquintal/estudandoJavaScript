@@ -70,3 +70,17 @@ A tag &lt;script&gt; pode ser inserida no head ou no body. A diferença é que a
 <div id="#aula04" align="center">
 <h2>Aula 04: Incluindo JavaScript em páginas HTML5 (parte 03) - Precedência de execução.</h2>
 </div>
+
+### Precedência de execução:
+
+É fundamental para o estabelecimento da lógica!
+
+Os elementos HTML são renderizados de acordo com a DOM, podendo ser selecionados a partir da linguagem JS para sofrer algum tipo de ação.
+
+Avaliar a ordem de disposição: o scrip executado antes do elemento referenciado/novo fará com que o JS não encontre o elemento e não execute a operação solicitada.
+
+
+<div id="#aula05" align="center">
+<h2>Aula 05: Comentários.</h2>
+</div>
+

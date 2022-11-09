@@ -4,7 +4,13 @@
 <h3>Seção 8: JavaScript</h3>
 <p>Curso Desenvolvimento Web Completo 2022</p>
 
-[O que é JS?](#aula01) | [Introdução](#aula02) | [Local e Externo](#aula03) | [Precedência de execução](#aula04) | [Comentários](#aula05) | [Váriáveis](#aula06) |
+<a href="#aula01">O que é JS?</a> | 
+<a href="#aula02">Introdução</a> | 
+<a href="#aula03">Local e Externo</a> | 
+<a href="#aula04">Precedência de execução</a> |  
+<a href="#aula05">Comentários</a> | 
+<a href="#aula06">Variáveis (introdução)</a> | 
+<a href="#aula76">Variáveis (prática)</a> | 
 
 </div>
 
@@ -106,3 +112,25 @@ encapsuladas em um mesmo comentário.
 <div id="#aula06" align="center">
 <h2>Aula 06: Variáveis - introdução.</h2>
 </div>
+
+### O que são variáveis?
+São espaços na memória que possibilitam armazenar informações de forma temporária.
+
+### Tipos de variáveis:
+- string - cadeias de caracteres, textos;
+- number - armazenam valores numéricos:
+  - subtipo int (números inteiros);
+  - subtipo float (admite fração - casas decimais separadas por ponto).
+- boolean - armazena estados (true, false).
+
+### Regras para declaração de variáveis:
+
+- não podem ser iniciadas com números, apenas com letras ou "_";
+- não podem ser utilizados caracteres especiais como "ç", "^", "~";
+- não podem ser iguais as palavras reservadas da linguagem.
+
+### Declarando variáveis com a instrução "var":
+É opcional, porém fortemente recomendado que utilize essa instrução. Permite que o interpretador entenda de forma explicita que se trata de uma declaração de variável.
+
+### Case sensitive:
+O JS faz a diferenciação entre letras maiúsculas e minúsculas.

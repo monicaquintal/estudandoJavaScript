@@ -14,6 +14,7 @@
 <a href="#aula08">Concatenação</a> | 
 <a href="#aula09">Uso do ';'</a> | 
 <a href="#aula10">Variáveis null e undefined</a> | 
+<a href="#aula11">Alterando valores de variáveis</a> | 
 
 </div>
 
@@ -188,4 +189,20 @@ No JS, podemos utilizar o ; ao término de cada instrução **ou não**, não pr
 
 <div id="aula10" align="center">
 <h2>Aula 10: Variáveis null e undefined</h2>
+</div>
+
+Possuem diferença sutil entre si, que deve ser estudada a fim de evitar possíveis bugs.
+
+### Variável null:
+
+Representa a **ausência intencional** de um valor. 
+Indica intencionalmente que ela, neste momento, apesar de declarada, faz referência à ausência de um valor dentro da variável.
+
+### Variável undefined:
+
+Indica que a variável, apesar de declarada, de fato **não possui nenhum valor** (valor inexistente).
+Situações em que tentamos acessar um recurso que não está disponível.
+
+<div id="aula11" align="center">
+<h2>Aula 11: Alterando valores de variáveis.</h2>
 </div>

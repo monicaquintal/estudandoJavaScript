@@ -12,6 +12,8 @@
 <a href="#aula06">Variáveis (introdução)</a> | 
 <a href="#aula07">Variáveis (prática)</a> | 
 <a href="#aula08">Concatenação</a> | 
+<a href="#aula09">Uso do ';'</a> | 
+<a href="#aula10">Variáveis null e undefined</a> | 
 
 </div>
 
@@ -174,3 +176,16 @@ Consiste na **unificação de valores textuais** das variáveis, de forma a mont
 Utilizar o operador ➕ para concatenar.
 
 *Observação:* o prompt sempre recebe os dados inseridos como string!
+
+
+<div id="aula09" align="center">
+<h2>Aula 09: Usar ou não o ";" no final dos comandos?</h2>
+</div>
+
+Muitas linguagens utilizam o ; como caracter de finalização de instrução, para indicar para o compilador que aquela instrução foi finalizada.
+
+No JS, podemos utilizar o ; ao término de cada instrução **ou não**, não produzindo nenhum tipo de erro. Ou seja, **usar ou não é opcional** - quem decide é a familiaridade do profissional com o desenvolvimento de códigos.
+
+<div id="aula10" align="center">
+<h2>Aula 10: Variáveis null e undefined</h2>
+</div>

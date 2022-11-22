@@ -168,3 +168,9 @@ O comando **console.log()** também é utilizado para debug, pois processa a pá
 <div id="aula08" align="center">
 <h2>Aula 08: Concatenação.</h2>
 </div>
+
+Consiste na **unificação de valores textuais** das variáveis, de forma a montar strings ou textos personalizados.
+
+Utilizar o operador ➕ para concatenar.
+
+*Observação:* o prompt sempre recebe os dados inseridos como string!

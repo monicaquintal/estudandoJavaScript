@@ -218,3 +218,19 @@ Considerar a variável como uma caixa, onde armazenamos determinado(s) valor(es)
 <div id="aula12" align="center">
 <h2>Aula 12: Revisão e desafio A-B-C.</h2>
 </div>
+
+### Revisão.
+
+- inclusão de código JS;
+- precedência de execução;
+- comentários;
+- variáveis;
+- concatenação.
+
+### Desafio A-B-C:
+
+1. criar uma página que contenha um script JS;
+2. deve conter as 3 variáveis: var a = 10, var b = 20, var c = null;
+3. realizar a impressão dos valores utilizando o método write.document;
+4. aplicar uma lógica: inverter os valores das variáveis A e B, porém não na forma hard code (utilizar a variável c neste processo);
+5. utilizar novamente o método write para imprimir essa inversão de valores.

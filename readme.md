@@ -3,7 +3,9 @@
 <h2>Estudando JavaScript 📒</h2>
 <h3>Seção 8: JavaScript</h3>
 <p>Curso Desenvolvimento Web Completo 2022</p>
+</div>
 
+<div align="justify">
 <a href="#aula01">O que é JS?</a> | 
 <a href="#aula02">Introdução</a> | 
 <a href="#aula03">Local e Externo</a> | 
@@ -14,8 +16,9 @@
 <a href="#aula08">Concatenação</a> | 
 <a href="#aula09">Uso do ';'</a> | 
 <a href="#aula10">Variáveis null e undefined</a> | 
-<a href="#aula11">Alterando valores de variáveis</a> | 
-
+<a href="#aula11">Alterando valores de variáveis</a> |
+<a href="#aula12">Revisão e desafio</a> |
+ 
 </div>
 
 <hr>
@@ -188,7 +191,7 @@ Muitas linguagens utilizam o ; como caracter de finalização de instrução, pa
 No JS, podemos utilizar o ; ao término de cada instrução **ou não**, não produzindo nenhum tipo de erro. Ou seja, **usar ou não é opcional** - quem decide é a familiaridade do profissional com o desenvolvimento de códigos.
 
 <div id="aula10" align="center">
-<h2>Aula 10: Variáveis null e undefined</h2>
+<h2>Aula 10: Variáveis null e undefined.</h2>
 </div>
 
 Possuem diferença sutil entre si, que deve ser estudada a fim de evitar possíveis bugs.
@@ -205,4 +208,13 @@ Situações em que tentamos acessar um recurso que não está disponível.
 
 <div id="aula11" align="center">
 <h2>Aula 11: Alterando valores de variáveis.</h2>
+</div>
+
+Os valores das variáveis podem e costumam ser alterados durante o processamento dos scripts, para atender a determinadas lógicas. 🧮
+
+Considerar a variável como uma caixa, onde armazenamos determinado(s) valor(es).´
+
+
+<div id="aula12" align="center">
+<h2>Aula 12: Revisão e desafio A-B-C.</h2>
 </div>

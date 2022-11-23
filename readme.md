@@ -22,7 +22,7 @@
 <a href="#aula14">Operadores Condicionais</a> |
 <a href="#aula15">If/else parte 2 - praticando</a> |
 <a href="#aula16">Praticando um pouco mais</a> |
-<a href="#aula17">Casting de tipos</a> |~
+<a href="#aula17">Casting de tipos</a> |
 <a href="#aula18">Operadores lógicos</a> |
  
 </div>
@@ -333,9 +333,9 @@ Trata-se da conversão de um tipo de dado em outro.
 
 No caso acima, apesar de se tratarem de números, são inseridos como String no prompt, ocorrendo, neste caso, a concatenação das strings (em vez de somar os números). 
   
-**Nesse momento que entra o Casting de tipos:**
+Nesse momento que entra o Casting de tipos:
 
-    ~~~javascript
+~~~javascript
   var variavel1 = prompt('Digite algum número')
   var variavel2 = prompt('Digite outro número')
 
@@ -343,7 +343,7 @@ No caso acima, apesar de se tratarem de números, são inseridos como String no 
   variavel2 = parseInt(variavel2)
 
   document.write(variavel1 + variavel2)
-  ~~~
+~~~
 
 Na situação acima, o parseInt permite que o valor informado no prompt seja encarado como número inteiro!!!
 

@@ -364,9 +364,15 @@ Operador | Status
 --------|----------
 E (&&) | V, se todas as expressões forem V
 OU (&verbar;&verbar;) | V, se pelo menos uma das expressões for V
-Negação (!) | Inerte o resultado da expressão de comparação
+Negação (!) | Inverte o resultado da expressão de comparação
 
 
 <div id="aula19" align="center">
   <h2>Aula 19: If/else parte 3 - praticando com operadores lógicos.</h2>
+</div>
+
+Operadores lógicos são fundamentais para a criação de critérios mais complexos de tomada de decisão!
+
+<div id="aula20" align="center">
+  <h2>Aula 20: Operador ternário.</h2>
 </div>

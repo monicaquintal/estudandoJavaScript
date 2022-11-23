@@ -348,10 +348,10 @@ Nesse momento que entra o Casting de tipos:
 Na situação acima, o parseInt permite que o valor informado no prompt seja encarado como número inteiro!
 
 Métodos | Descrição
---------------------------
-parseInt() | Remove a fração, preservando apenas a parte inteira do número
-parseFloat() | Preserva a fração do número em questão
-toString() | Extrai a representação textual do valor numérico 
+-------------------
+parseInt | Remove a fração, preservando apenas a parte inteira do número
+parseFloat | Preserva a fração do número em questão
+toString | Extrai a representação textual do valor numérico 
 
 
 <div id="aula18" align="center">

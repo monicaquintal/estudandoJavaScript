@@ -19,7 +19,8 @@
 <a href="#aula11">Alterando valores de variáveis</a> |
 <a href="#aula12">Revisão e desafio</a> |
 <a href="#aula13">If/else parte 1 - introdução</a> |
-<a href="#aula14">Condicionais</a> |
+<a href="#aula14">Operadores Condicionais</a> |
+<a href="#aula15">If/else parte 2 - praticando</a> |
  
 </div>
 
@@ -267,4 +268,24 @@ if (condição) {
 
 <div id="aula14" align="center">
 <h2>Aula 14: Operadores de comparação (condicionais).</h2>
+</div>
+
+Também conhecidos como operadores relacionais (são 8 no total).
+
+Servem para formar expressões condicionais para o comando if.
+
+Operador | Função
+----------|--------
+Igual (==) | Verifica se os valores comparados são iguais
+Idêntico (===) | Verifica se os valores são iguais e do mesmo tipo
+DIferente (!=) | Verifica se os valores são diferentes
+Não idêntico (!==) | Verifica se os valores são diferentes e de tipos distintos
+Menor (&lt;) | Verifica se o valor da esquerda é menor que o da direita
+Maior (&gt;) | Verifica se o valor da esquerda é maior que o da direita
+Menor igual (&lt;=) | Verifica se o valor da esquerda é menor ou igual ao da direita
+Maior ou igual (&gt;=) | Verifica se o valor da esquerda é maior ou igual ao da direita
+
+
+<div id="aula15" align="center">
+<h2>Aula 15: If/else (parte 2) - Praticando com operadores de comparação.</h2>
 </div>

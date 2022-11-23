@@ -22,6 +22,7 @@
 <a href="#aula14">Operadores Condicionais</a> |
 <a href="#aula15">If/else parte 2 - praticando</a> |
 <a href="#aula16">Praticando um pouco mais</a> |
+<a href="#aula17">Casting de tipos</a> |
  
 </div>
 
@@ -300,4 +301,24 @@ Aplicação dos conceitos das aulas 13 e 14 (estrutura if/else e utilização do
 <h2>Aula 16: Praticando um pouco mais com operadores de comparação.</h2>
 </div>
 
-Aplicação dos conceitos das aulas 13 e 14 (estrutura if/else e utilização dos operadores relacionais).
+Aplicando estrutura if/else e utilização dos operadores relacionais em estruturas mais complexas/reais.
+
+Exemplo: 
+
+~~~javascript
+  var nota = prompt('Digite a nota do aluno')
+  var media = 7
+  
+  if (nota >= media) {
+    document.write('Aprovado')
+  } else {
+    document.write('Reprovado')
+  }
+  ~~~
+
+  Atentar-se que, no exemplo acima, estamos comparando uma string (prompt) com um valor numérico. No caso do uso do '==', o JS possui a inteligência para identificar que trata-se de um valor a ser comparado (não utilizar o operador '===').
+
+
+  <div id="aula17" align="center">
+  <h2>Aula 17: Casting de tipos com toString(), parseInt() e parseFloat().</h2>
+  </div>

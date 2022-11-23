@@ -24,7 +24,9 @@
 <a href="#aula16">Praticando um pouco mais</a> |
 <a href="#aula17">Casting de tipos</a> |
 <a href="#aula18">Operadores lógicos</a> |
- <a href="#aula19">If/else parte 3 - operadores lógicos</a> |
+<a href="#aula19">If/else parte 3 - operadores lógicos</a> |
+<a href="#aula20">Operador ternário</a> |
+<a href="#aula21">Atividades para fixação</a> |
 </div>
 
 <hr>
@@ -373,6 +375,21 @@ Negação (!) | Inverte o resultado da expressão de comparação
 
 Operadores lógicos são fundamentais para a criação de critérios mais complexos de tomada de decisão!
 
+
 <div id="aula20" align="center">
   <h2>Aula 20: Operador ternário.</h2>
+</div>
+
+É uma estrutura de decisão semelhante ao if/else. 
+A diferença é que ele possui uma **sintaxe mais enxuta**, tornando o código menos verboso. Entretanto, é um pouco mais limitado.
+
+~~~javascript
+var resultado = <condicao> ? <verdadeiro> : <falso>
+~~~
+
+É limitado, podendo retornar apenas valores que correspondam a dados, como Strigs e valores numéricos.
+
+
+<div id="aula21" align="center">
+  <h2>Aula 21: Atividades para fixação do conteúdo.</h2>
 </div>

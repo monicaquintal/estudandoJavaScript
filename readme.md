@@ -24,7 +24,7 @@
 <a href="#aula16">Praticando um pouco mais</a> |
 <a href="#aula17">Casting de tipos</a> |
 <a href="#aula18">Operadores lógicos</a> |
- 
+ <a href="#aula19">If/else parte 3 - operadores lógicos</a> |
 </div>
 
 <hr>
@@ -356,4 +356,17 @@ toString | Extrai a representação textual do valor numérico
 
 <div id="aula18" align="center">
   <h2>Aula 18: Operadores lógicos 💭</h2>
+</div>
+
+São operadores que nos permitem conectar operações de comparação. Garantem maiores dinâmicas às estruturas e condições.
+
+Operador | Status
+--------|----------
+E (&&) | V, se todas as expressões forem V
+OU (||) | V, se pelo menos uma das expressões for V
+Negação (!) | Inerte o resultado da expressão de comparação
+
+
+<div id="aula19" align="center">
+  <h2>Aula 19: If/else parte 3 - praticando com operadores lógicos.</h2>
 </div>

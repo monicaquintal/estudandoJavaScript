@@ -345,7 +345,7 @@ Nesse momento que entra o Casting de tipos:
   document.write(variavel1 + variavel2)
 ~~~
 
-Na situação acima, o parseInt permite que o valor informado no prompt seja encarado como número inteiro!!!
+Na situação acima, o parseInt permite que o valor informado no prompt seja encarado como número inteiro!
 
 Métodos | Descrição
 --------------------------

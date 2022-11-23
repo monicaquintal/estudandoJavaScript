@@ -324,12 +324,12 @@ Atentar-se que, no exemplo acima, estamos comparando uma string (prompt) com um 
 
 Trata-se da conversão de um tipo de dado em outro.
 
-  ~~~javascript
+~~~javascript
   var variavel1 = prompt('Digite algum número')
   var variavel2 = prompt('Digite outro número')
 
   document.write(variavel1 + variavel2)
-  ~~~
+~~~
 
 No caso acima, apesar de se tratarem de números, são inseridos como String no prompt, ocorrendo, neste caso, a concatenação das strings (em vez de somar os números). 
   
@@ -347,8 +347,8 @@ Nesse momento que entra o Casting de tipos:
 
 Na situação acima, o parseInt permite que o valor informado no prompt seja encarado como número inteiro!
 
-Métodos | Descrição
--------------------
+Método | Descrição
+--------|-----------
 parseInt | Remove a fração, preservando apenas a parte inteira do número
 parseFloat | Preserva a fração do número em questão
 toString | Extrai a representação textual do valor numérico 

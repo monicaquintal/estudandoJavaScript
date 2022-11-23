@@ -363,7 +363,7 @@ São operadores que nos permitem conectar operações de comparação. Garantem 
 Operador | Status
 --------|----------
 E (&&) | V, se todas as expressões forem V
-OU (||) | V, se pelo menos uma das expressões for V
+OU (&verbar;&verbar;) | V, se pelo menos uma das expressões for V
 Negação (!) | Inerte o resultado da expressão de comparação
 
 

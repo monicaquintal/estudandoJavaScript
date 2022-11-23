@@ -18,6 +18,8 @@
 <a href="#aula10">Variáveis null e undefined</a> | 
 <a href="#aula11">Alterando valores de variáveis</a> |
 <a href="#aula12">Revisão e desafio</a> |
+<a href="#aula13">If/else parte 1 - introdução</a> |
+<a href="#aula14">Condicionais</a> |
  
 </div>
 
@@ -234,3 +236,35 @@ Considerar a variável como uma caixa, onde armazenamos determinado(s) valor(es)
 3. realizar a impressão dos valores utilizando o método write.document;
 4. aplicar uma lógica: inverter os valores das variáveis A e B, porém não na forma hard code (utilizar a variável c neste processo);
 5. utilizar novamente o método write para imprimir essa inversão de valores.
+
+
+<div id="aula13" align="center">
+<h2>Aula 13: If/else parte 1 - introdução.</h2>
+</div>
+
+É uma estrutura de controle, que nos permite definir qual fluxo a aplicação tomará, a partir de uma determinada condição.
+
+```
+if (condição) {
+  // trecho de código que será executado
+} else {
+  // trecho de código que será executado
+}
+```
+
+O comando if/else pode ser encadeado, como a seguir:
+
+```
+if (condição) {
+  // trecho de código que será executado
+} else if  {
+  // trecho de código que será executado
+} else {
+  // trecho de código que será executado
+}
+```
+
+
+<div id="aula14" align="center">
+<h2>Aula 14: Operadores de comparação (condicionais).</h2>
+</div>

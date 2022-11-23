@@ -22,7 +22,8 @@
 <a href="#aula14">Operadores Condicionais</a> |
 <a href="#aula15">If/else parte 2 - praticando</a> |
 <a href="#aula16">Praticando um pouco mais</a> |
-<a href="#aula17">Casting de tipos</a> |
+<a href="#aula17">Casting de tipos</a> |~
+<a href="#aula18">Operadores lógicos</a> |
  
 </div>
 
@@ -52,14 +53,14 @@ Por fim, JS é uma linguagem de programação interpretada; os scripts são enca
 Há duas formas:
 
 1. incluindo a codificação JS diretamente:
-  ```
+  ```javascript
   <script>
   // aqui fica a codificação JavaScript 
   </script>
   ``` 
 
 2. a partir de um arquivo externo:
-  ```
+  ```javascript
   <script src="meu_script.js"></script>
   ```
 
@@ -108,12 +109,12 @@ Avaliar a ordem de disposição: o scrip executado antes do elemento referenciad
 Auxilia a compreensão da lógica aplicada, e a compreensão do mesmo por terceiros.
 
 1. Comentário de uma linha:
-```
+```javascript
 //comentário de uma linha
 ```
 
 2. Comentário de múltiplas linhas:
-```
+```javascript
 /* 
 Permite que várias linhas sejam 
 encapsuladas em um mesmo comentário.
@@ -153,18 +154,18 @@ O JS faz a diferenciação entre letras maiúsculas e minúsculas.
 </div>
 
 a. string: usar aspas duplas ou simples.
-```
+```javascript
 var texto = "Curso de JavaScript"
 ```
 
 b. number: Int, Float, Double
-```
+```javascript
 var numeroInteiro = -7
 var numeroFracionado = 123.45
 ```
 
 c. boolean: estruturas condicionais (true e false)
-```
+```javascript
 var teste = true
 ```
 
@@ -257,7 +258,7 @@ if (condição) {
 
 O comando if/else pode ser encadeado, como a seguir:
 
-```
+```javascript
 if (condição) {
   // trecho de código que será executado
 } else if  {
@@ -276,7 +277,6 @@ Também conhecidos como operadores relacionais (são 8 no total).
 
 Servem para formar expressões condicionais para o comando if.
 
-<div align="center">
 Operador | Função
 ----------|--------
 Igual (==) | Verifica se os valores comparados são iguais
@@ -287,7 +287,6 @@ Menor (&lt;) | Verifica se o valor da esquerda é menor que o da direita
 Maior (&gt;) | Verifica se o valor da esquerda é maior que o da direita
 Menor igual (&lt;=) | Verifica se o valor da esquerda é menor ou igual ao da direita
 Maior ou igual (&gt;=) | Verifica se o valor da esquerda é maior ou igual ao da direita
-</div>
 
 
 <div id="aula15" align="center">
@@ -316,9 +315,45 @@ Exemplo:
   }
   ~~~
 
-  Atentar-se que, no exemplo acima, estamos comparando uma string (prompt) com um valor numérico. No caso do uso do '==', o JS possui a inteligência para identificar que trata-se de um valor a ser comparado (não utilizar o operador '===').
+Atentar-se que, no exemplo acima, estamos comparando uma string (prompt) com um valor numérico. No caso do uso do '==', o JS possui a inteligência para identificar que trata-se de um valor a ser comparado (não utilizar o operador '===').
 
 
-  <div id="aula17" align="center">
+<div id="aula17" align="center">
   <h2>Aula 17: Casting de tipos com toString(), parseInt() e parseFloat().</h2>
-  </div>
+</div>
+
+Trata-se da conversão de um tipo de dado em outro.
+
+  ~~~javascript
+  var variavel1 = prompt('Digite algum número')
+  var variavel2 = prompt('Digite outro número')
+
+  document.write(variavel1 + variavel2)
+  ~~~
+
+No caso acima, apesar de se tratarem de números, são inseridos como String no prompt, ocorrendo, neste caso, a concatenação das strings (em vez de somar os números). 
+  
+**Nesse momento que entra o Casting de tipos:**
+
+    ~~~javascript
+  var variavel1 = prompt('Digite algum número')
+  var variavel2 = prompt('Digite outro número')
+
+  variavel1 = parseInt(variavel1)
+  variavel2 = parseInt(variavel2)
+
+  document.write(variavel1 + variavel2)
+  ~~~
+
+Na situação acima, o parseInt permite que o valor informado no prompt seja encarado como número inteiro!!!
+
+Métodos | Descrição
+--------------------------
+parseInt() | Remove a fração, preservando apenas a parte inteira do número
+parseFloat() | Preserva a fração do número em questão
+toString() | Extrai a representação textual do valor numérico 
+
+
+<div id="aula18" align="center">
+  <h2>Aula 18: Operadores lógicos 💭</h2>
+</div>

@@ -33,6 +33,8 @@
 <a href="#aula25">Praticando com operadores aritméticos</a> |
 <a href="#aula26">Operações aritméticas na atribuição de valores</a> |
 <a href="#aula27">Precedência operações aritméticas</a> |
+<a href="#aula28">Atividades de fixação</a> |
+<a href="#aula29">Funções (intro)</a> |
 
 </div>
 
@@ -550,3 +552,13 @@ Também podemos realizar a concatenação de strings da mesma forma!
 <div id="aula27" align="center">
   <h2>Aula 27: Precedência de execução das operações aritméticas.</h2>
 </div>
+
+A interpretação do código ocorre de forma gravitacional: de cima para baixo, da esquerda para a direita. 
+
+Entretanto, os princípios matemáticos são aplicados de modo coerente durante a leitura do código (há uma precedência ou importância maior para cada operação matemática). Portanto, há uma ordem:
+
+1. Multiplicação e divisão 
+2. Soma e subtração 
+
+Há ainda os parênteses, capazes de aplicar precedência dentro das operações aritméticas.
+

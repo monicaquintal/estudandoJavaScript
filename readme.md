@@ -31,6 +31,7 @@
 <a href="#aula23">Switch na prática</a> |
 <a href="#aula24">Operadores aritméticos</a> |
 <a href="#aula25">Praticando com operadores aritméticos</a> |
+<a href="#aula26">Operações aritméticas na atribuição de valores</a> |
 </div>
 
 <hr>
@@ -477,7 +478,7 @@ Para solucionar, podemos transformar os cases em String, colocando os parâmetro
 São (7) operadores matemáticos que nos permitem efetuar cálculos básicos em JavaScript.
 
 Operadores | Representação | Função
------------|---------------|---------
+-----------|:---------------:|---------
 Adição | + | Soma valores
 Subtração | - | Diferença entre valores
 Multiplicação | * | Produto dos valores
@@ -491,4 +492,33 @@ O + é usado para concatenação (em caso de strings envolvidas) e para soma (qu
 
 <div id="aula25" align="center">
   <h2>Aula 25: Praticando com operadores aritméticos.</h2>
+</div>
+
+Aplicando o que foi estudado anteriormente:
+
+~~~javascript
+ <script>
+
+        var num1 = prompt('Digite o valor de num1')
+        var num2 = prompt('Digite o valor de num2')
+
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+
+        document.write('A soma entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 + num2) + '<br />')
+        document.write('A subtração entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 - num2) + '<br />')
+        document.write('A multiplicação entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 * num2) + '<br />')
+        document.write('A divisão entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 / num2) + '<br />')
+        document.write('O módulo entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 % num2) + '<br />')
+        document.write('O incremento de ' + num1 + ' é: ' + (++num1) + '<br />')
+        document.write(num1 + '<br />')
+        document.write('O decremento de ' + num1 + ' é: ' + (--num1) + '<br />')
+        document.write(num1)
+
+    </script>
+~~~
+
+
+<div id="aula26" align="center">
+  <h2>Aula 26: Operações aritméticas na atribuição de valores.</h2>
 </div>

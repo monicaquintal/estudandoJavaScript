@@ -32,6 +32,8 @@
 <a href="#aula24">Operadores aritméticos</a> |
 <a href="#aula25">Praticando com operadores aritméticos</a> |
 <a href="#aula26">Operações aritméticas na atribuição de valores</a> |
+<a href="#aula27">Precedência operações aritméticas</a> |
+
 </div>
 
 <hr>
@@ -521,4 +523,30 @@ Aplicando o que foi estudado anteriormente:
 
 <div id="aula26" align="center">
   <h2>Aula 26: Operações aritméticas na atribuição de valores.</h2>
+</div>
+
+Em JS, podemos realizar operações matemáticas ou concatenação no processo de atribuição de valores a variáveis!
+
+O objetivo é diminuir a quantidade de código, tornando os sripts menos verbosos, mais enxutos.
+
+Usualmente, escrevemos:
+~~~javascript
+var teste = 10
+teste = teste + 5
+~~~
+
+Porém, no JS, podemos escrever da seguinte forma, obtendo o mesmo resultado:
+
+~~~javascript
+var teste = 10
+teste += 5
+~~~
+
+Podemos fazer operações de subtração, multiplicação, divisão e mod da mesma forma.
+
+Também podemos realizar a concatenação de strings da mesma forma!
+
+
+<div id="aula27" align="center">
+  <h2>Aula 27: Precedência de execução das operações aritméticas.</h2>
 </div>

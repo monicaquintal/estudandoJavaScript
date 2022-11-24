@@ -28,6 +28,8 @@
 <a href="#aula20">Operador ternário</a> |
 <a href="#aula21">Atividades para fixação</a> |
 <a href="#aula22">Switch</a> |
+<a href="#aula23">Switch na prática</a> |
+<a href="#aula24">Operadores aritméticos</a> |
 </div>
 
 <hr>
@@ -460,4 +462,12 @@ O default funciona como o "else". Ele pode ser omitido e, caso nenhum case seja 
 
 <div id="aula23" align="center">
   <h2>Aula 23: Switch na prática.</h2>
+</div>
+
+Switch realiza *comparação por identidade*. Portanto, numa aplicação, caso comparássemos a String '2' com o valor 2, não será identificado como case (irá para Default)!
+
+Para solucionar, podemos transformar os cases em String, colocando os parâmetros entre aspas (como case '1'), por exemplo, ou utilizar casting de tipos (como switch (parseInt(parametro)).
+
+<div id="aula24" align="center">
+  <h2>Aula 24: Operadores aritméticos.</h2>
 </div>

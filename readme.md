@@ -413,7 +413,7 @@ Fique à vontade para utilizar qualquer uma das funções aprendidas para exibi�
 var idade = prompt('Informe a idade:')
 
 if (idade >= 0 && idade < 15) {
-	alert('Criança! 👲')
+	alert('Criança! 👶👲👧')
 } else if (idade >= 15 && idade < 30) {
 	alert('Jovem! 👱‍♂️👱‍♀️')
 } else if (idade >= 30 && idade < 60) {
@@ -427,4 +427,37 @@ if (idade >= 0 && idade < 15) {
 
 <div id="aula22" align="center">
   <h2>Aula 22: Switch.</h2>
+</div>
+
+É um condicional; segue um determinado fluxo na aplicação, de acordo com a condição.
+Escrito de forma diferente do if, auxilia no entendimento do código, por ter uma escrita mais enxuta.
+É limitado pelo fato se só realizar **comparação de idênticos**.
+
+~~~javascript
+var opcao = 2
+
+switch (opção) {
+
+  case 1:
+    // trecho de código que será executado
+    break
+
+  case 2:
+    // trecho de código que será executado
+    break
+
+  default:
+    // trecho de código que será executado
+    break
+
+}
+~~~
+
+Ao terminar as instruções, devemos incluir o comando break, pois ele indica ao switch que aquele case chegou até o final.
+
+O default funciona como o "else". Ele pode ser omitido e, caso nenhum case seja localizado, nada será feito. Caso ele seja definido e não seja identificado nenhum case, executará o default.
+
+
+<div id="aula23" align="center">
+  <h2>Aula 23: Switch na prática.</h2>
 </div>

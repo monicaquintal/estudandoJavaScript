@@ -12,7 +12,7 @@ var nome = prompt('Informe seu nome:')
 var altura = prompt('Informe sua altura (em centímetros):')
 var peso = prompt('Informe seu peso:')
 
-//conversão caracteres em float
+//conversão caracteres utilizando float
 altura = parseFloat(altura)
 peso = parseFloat(peso)
 

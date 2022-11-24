@@ -27,6 +27,7 @@
 <a href="#aula19">If/else parte 3 - operadores lógicos</a> |
 <a href="#aula20">Operador ternário</a> |
 <a href="#aula21">Atividades para fixação</a> |
+<a href="#aula22">Switch</a> |
 </div>
 
 <hr>
@@ -392,4 +393,38 @@ var resultado = <condicao> ? <verdadeiro> : <falso>
 
 <div id="aula21" align="center">
   <h2>Aula 21: Atividades para fixação do conteúdo.</h2>
+</div>
+
+### Exercício:
+
+Crie uma aplicação capaz de identificar a faixa etária com base na idade informada pelo usuário. Considere os seguintes critérios:
+
+- Se a idade informada for maior ou igual a 0 e menor que 15, exibir a mensagem “Criança”.
+- Se a idade informada for maior ou igual a 15 e menor que 30, exibir a mensagem “Jovem”.
+- Se a idade informada for maior ou igual a 30 e menor que 60, exibir a mensagem “Adulto”.
+- Se a idade informada for maior ou igual a 60, exibir a mensagem “Idoso”.
+
+Fique à vontade para utilizar qualquer uma das funções aprendidas para exibição de dados para o usuário. 
+
+### Solução:
+
+~~~javascript
+<script>
+var idade = prompt('Informe a idade:')
+
+if (idade >= 0 && idade < 15) {
+	alert('Criança! 👲')
+} else if (idade >= 15 && idade < 30) {
+	alert('Jovem! 👱‍♂️👱‍♀️')
+} else if (idade >= 30 && idade < 60) {
+	alert('Adulto! 🧔👩')
+} else {
+	alert('Idoso! 👵🧓')
+}
+</script>
+~~~
+
+
+<div id="aula22" align="center">
+  <h2>Aula 22: Switch.</h2>
 </div>

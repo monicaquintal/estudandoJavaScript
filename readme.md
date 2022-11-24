@@ -30,6 +30,7 @@
 <a href="#aula22">Switch</a> |
 <a href="#aula23">Switch na prática</a> |
 <a href="#aula24">Operadores aritméticos</a> |
+<a href="#aula25">Praticando com operadores aritméticos</a> |
 </div>
 
 <hr>
@@ -468,6 +469,26 @@ Switch realiza *comparação por identidade*. Portanto, numa aplicação, caso c
 
 Para solucionar, podemos transformar os cases em String, colocando os parâmetros entre aspas (como case '1'), por exemplo, ou utilizar casting de tipos (como switch (parseInt(parametro)).
 
+
 <div id="aula24" align="center">
   <h2>Aula 24: Operadores aritméticos.</h2>
+</div>
+
+São (7) operadores matemáticos que nos permitem efetuar cálculos básicos em JavaScript.
+
+Operadores | Representação | Função
+-----------|---------------|---------
+Adição | + | Soma valores
+Subtração | - | Diferença entre valores
+Multiplicação | * | Produto dos valores
+Divisão | / | Quociente dos valores
+Módulo | % | Resto existente em uma operação de divisão
+Incremento | ++ | Pré/pós incremento (add 1 unidade ao valor)
+Decremento | -- | Pré/pós decremento (tira 1 unidade ao valor)
+
+O + é usado para concatenação (em caso de strings envolvidas) e para soma (quando inclui apenas valores numéricos).
+
+
+<div id="aula25" align="center">
+  <h2>Aula 25: Praticando com operadores aritméticos.</h2>
 </div>

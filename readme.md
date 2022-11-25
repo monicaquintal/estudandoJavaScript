@@ -35,6 +35,7 @@
 <a href="#aula27">Precedência operações aritméticas</a> |
 <a href="#aula28">Atividades de fixação</a> |
 <a href="#aula29">Funções (intro)</a> |
+<a href="#aula30">Funções (prática)</a> |
 
 </div>
 
@@ -637,4 +638,31 @@ alert(nome + " possui índice de massa corporal igual a " + imc.toFixed(2) + ", 
 
 <div id="aula29" align="center">
   <h2>Aula 29: Funções - Introdução.</h2>
+</div>
+
+A função é responsável por encapsular um bloco de código para um objetivo definido, podendo ser reutilizada em diversos momentos de nossas aplicações.
+
+Exemplo de declaração de função:
+
+~~~javascript
+function calcularAreaTerreno(largura, comprimento) {
+  var area = largura * comprimento
+  return area
+}
+~~~
+
+É indicado (como boa prática) o uso de duas palavras combinadas para nomear funções, sendo a primeira um verbo no infinitivo, e a segunda, um substativo iniciado com a primeira letra maiúscula.
+
+**Parâmetros ou argumentos**: funcionam como uma espécie de entrada de dados da função. Podemos não passar nenhum parâmetro, ou quantos forem necessários (separando-os por vírgulas). São variáveis.
+
+**Escopo**: nele, podemos trabalhar com todos os recursos da linguagem para criação da lógica da função, podendo inclusive chamar outras funções - por isso falamos que as funções são subprogramas dos nossos programas.
+
+Podem ser de **dois tipos**:
+
+1. void: quando chamada, apenas processará alguma lógica.
+2. com retorno: como o exemplo acima; processa lógica e retornará algum valor para o script que efetuou a chamada da função.
+
+
+<div id="aula30" align="center">
+  <h2>Aula 30: Funções - Prática.</h2>
 </div>

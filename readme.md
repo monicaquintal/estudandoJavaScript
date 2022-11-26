@@ -36,7 +36,7 @@
 <a href="#aula28">Atividades de fixação</a> |
 <a href="#aula29">Funções (intro)</a> |
 <a href="#aula30">Funções (prática)</a> |
-
+<a href="#aula31">Funções (parâmetros)</a> |
 </div>
 
 <hr>
@@ -609,7 +609,7 @@ peso = parseFloat(peso)
 altura /= 100
 
 //cálculo IMC
-var imc = peso / (altura^2)
+var imc = peso / (altura * altura)
 
 //classificação em categorias
 var classificacao=""
@@ -659,10 +659,48 @@ function calcularAreaTerreno(largura, comprimento) {
 
 Podem ser de **dois tipos**:
 
-1. void: quando chamada, apenas processará alguma lógica.
+1. void: quando chamada, apenas processará alguma lógica (sem retorno para quem fez a chamada).
 2. com retorno: como o exemplo acima; processa lógica e retornará algum valor para o script que efetuou a chamada da função.
 
 
 <div id="aula30" align="center">
   <h2>Aula 30: Funções - Prática.</h2>
+</div>
+
+Continuando o estudo da aula anterior, para chamae a função acima, escrevemos (definindo os parâmetros nos parênteses):
+
+~~~javascript
+function calcularAreaTerreno(largura, comprimento) {
+  var area = largura * comprimento
+  return area
+}
+
+var area = calcularAreaTerreno(15, 25)
+document.write('O terreno possui ' + area + ' metros quadrados.')
+~~~
+
+Acima definimos o valor retornado da função COMO UMA VARIÁVEL, tornando a escrita mais clara e facilitando a leitura do script.
+
+Podemos, inclusive, fazer com que os parâmetros sejam fornecidos pelo usuário. Exemplo:
+
+~~~javascript
+function calcularAreaTerreno(largura, comprimento) {
+  var area = largura * comprimento
+  return area
+}
+
+var largura = prompt('Digite a largura do terreno (em metros).')
+var comprimento = prompt('Digite o comprimento do terreno (em metros).')
+
+var area = calcularAreaTerreno(15, 25)
+document.write('O terreno possui ' + area + ' metros quadrados.')
+~~~
+
+Os dados do prompt são coletados como string. Entretanto, o JS identifica que é realizada uma operação de multiplicação com os valores coletados, e realiza a operação. Porém, sugere-se que seja realizado o parseFloat, para evitar bugs no futuro.
+
+As funções não precisam ser declaradas antes das suas respectivas chamadas. Quando o interpretador do JS lê o script, ele procura primeiro pelas funções, as aloca em memória, e em seguida lê o script. Ou seja, nada impede de declarar a função ao final do script.
+
+
+<div id="aula31" align="center">
+  <h2>Aula 31: Funções - Flexibilidade de parâmetros.</h2>
 </div>

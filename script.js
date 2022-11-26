@@ -7,6 +7,8 @@
 document.getElementById('nome').value = 'Oi'
 */
 
+/* atividade para fixação 
+
 //parâmetros
 var nome = prompt('Informe seu nome:')
 var altura = prompt('Informe sua altura (em centímetros):')
@@ -43,4 +45,5 @@ if (imc < 16) {
 	classificacao = "Obesidade grau III"
 } 
 
-alert(nome + " possui índice de massa corporal igual a " + imc.toFixed(2) + ", sendo classificado como: " + classificacao + "." )
+alert(nome + " possui índice de massa corporal igual a " + imc.toFixed(2) + ", sendo classificado como: " + classificacao + "." ) */
+

@@ -79,3 +79,25 @@ x()
 
 document.write('<br />')
 document.write(serie3) //não renderiza */
+
+/* funções de callback */
+function exibirArtigo(id, callbackSucesso, callbackErro) {
+  //lógica: recuperar o id via requisição http
+  if (true) {
+    callbackSucesso("Funções Callback em JS", "São funções encaminhadas como parâmetro para outras funções. O objetivo é, após a finalização da função, ter condições de chamar a função encaminhada por parâmetro, dando continuidade no processamento da lógica da aplicação.")
+  } else {
+    callbackErro("Erro ao recuperar os dados!")
+  }
+}
+
+var callbackSucesso = function(titulo, descricao) {
+	document.write('<h1>' + titulo + '</h1>')
+	document.write('<hr />')
+	document.write('<p>' + descricao + '</p>')
+}
+
+var callbackErro = function(erro) {
+	document.write('<p><b>Erro:</b>' + erro + '</p>')
+}
+
+exibirArtigo(1, callbackSucesso, callbackErro)

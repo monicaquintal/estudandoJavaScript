@@ -46,6 +46,7 @@
 <a href="#aula32">Escopo de variáveis</a> |
 <a href="#aula33">Funções anônimas e técnica de wrapper</a> |
 <a href="#aula34">Funções de callback</a> |
+<a href="#aula35">Funções nativas para manipular strings</a> |
 </div>
 
 <hr>
@@ -836,4 +837,29 @@ Ou seja, a variável passar a guardar uma referência para a função!
 
 <div id="aula34" align="center">
   <h2>Aula 34: Funções de callback.</h2>
+</div>
+
+São funções encaminhadas como parâmetro para outras funções.
+
+O objetivo é, após a finalização da função, ter condições de chamar a função encaminhada por parâmetro, dando continuidade no processamento da lógica da aplicação.
+
+Exemplo:
+
+~~~javascript
+callbackSucesso(titulo, descricao)
+callbackErro(erro)
+
+function exibirArtigo(id,callbackSucesso, callbackErro) {
+  //lógica para recuperar o artigo com base no id
+  if (?) {
+    callbackSucesso('Titulo', 'Descrição')
+  } else {
+    callbackErro('Erro')
+  }
+}
+~~~
+
+
+<div id="aula35" align="center">
+  <h2>Aula 35: Funções nativas para manipular strings.</h2>
 </div>

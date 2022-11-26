@@ -19,7 +19,7 @@
 <a href="#aula09">Uso do ';'</a> | 
 <a href="#aula10">Variáveis null e undefined</a> | 
 <a href="#aula11">Alterando valores de variáveis</a> |
-<a href="#aula12">Revisão e desafio</a> |
+<a href="#aula12">Revisão e desafio</a>
 
 ## Estruturas Condicionais
 <a href="#aula13">If/else parte 1 - introdução</a> |
@@ -37,7 +37,7 @@
 <a href="#aula25">Praticando com operadores aritméticos</a> |
 <a href="#aula26">Operações aritméticas na atribuição de valores</a> |
 <a href="#aula27">Precedência operações aritméticas</a> |
-<a href="#aula28">Atividades de fixação</a> |
+<a href="#aula28">Atividades de fixação</a>
 
 ## Funções
 <a href="#aula29">Funções (intro)</a> |
@@ -47,6 +47,7 @@
 <a href="#aula33">Funções anônimas e técnica de wrapper</a> |
 <a href="#aula34">Funções de callback</a> |
 <a href="#aula35">Funções nativas para manipular strings</a> |
+<a href="#aula36">Funções nativas para tarefas matemáticas</a> |
 </div>
 
 <hr>
@@ -862,4 +863,86 @@ function exibirArtigo(id,callbackSucesso, callbackErro) {
 
 <div id="aula35" align="center">
   <h2>Aula 35: Funções nativas para manipular strings.</h2>
+</div>
+
+Vale lembrar que valores primitivos como strings por si só não possuem propriedades ou métodos. Porém, quando são interpretados pelo JS, podem ser interpretados como objetos, agregando propriedades e métodos pré-estabelecidos da linguagem!
+
+Cada caractere contido dentro de uma string ocupa uma posição sequencial específica, sendo que tem início na posição 0.
+
+Recomendado o acesso à [Documentação no site do W3schools](https://www.w3schools.com/js/) para ter acesso à relação de propriedades e atributos de objetos e strings em JS (clicar em JS String).
+
+### Propriedade length:
+
+Retrna a quantidade de caracteres de uma String. A partir dela, podemos testar o tamanho de uma String e tomar uma decisão, como por exemplo, truncar (cortar) a String para que caiba em uma área específica da página.
+
+~~~javascript
+document.write('Mônica Zungalo Quintal'.length)
+// O exemplo acima retorna o resultado "22". 
+~~~
+
+Lembrar que a String tem início no valor zero, e a indexação dos caracteres é sequencial e automática. Os caracteres em branco também contam! 
+
+### Método charAt():
+
+Retorna um caractere com base na posição que o mesmo ocupa dentro da cadeia. 
+Ou seja, encaminhamos um índice e o charAt informa o caracter contido no índice.
+
+~~~javascript
+document.write('Mônica Zungalo Quintal'.charAt(3))
+// O exemplo acima retorna o resultado "i".
+~~~
+
+### Método indexOf():
+
+Retorna a posição da primeira ocorrência de um valor específico dentro da String.
+
+~~~javascript
+document.write('Mônica Zungalo Quintal'.indexOf('a'))
+// O exemplo acima retorna o resultado "5".
+~~~
+
+Caso informe um caractere que não existe na String, o resultado será **-1**.
+
+### Método replace():
+
+Permite, com base em um valor de pesquisa e também em um outro valor de modificação, substituir textos dentro de uma string.
+
+~~~javascript
+document.write('Mônica Zungalo Quintal'.replace('Zungalo Quintal', 'estudante de DS'))
+// O exemplo acima retorna o resultado "Mônica estudante de DS"
+~~~
+
+### Método substr():
+
+Permite extrair parte de uma string, com base em uma posição inicial, seguida de um valor que representa a quantidade de caracteres à frente daquela posição inicial (é como se recortasse uma parte da string).
+
+~~~javascript
+document.write('Mônica Zungalo Quintal'.substr(15, 7))
+// O exemplo acima retorna o resultado "Quintal"
+~~~
+
+### Métodos toLowerCase() e toUpperCase():
+
+toLowerCase converte todos os caracteres de uma string para caixa baixa (caracteres minúsculos), e toUpperCase, para caixa alta (caracteres maiúsculos).
+
+~~~javascript
+document.write('Mônica Zungalo Quintal'.toLowerCase())
+//resultado 'monica zungalo quintal'
+document.write('Mônica Zungalo Quintal'.toUpperCase())
+//resultado 'MONICA ZUNGALO QUINTAL'
+~~~
+
+### Método trim ():
+
+Remove os espaços em branco das extremidades de uma String.
+
+~~~javascript
+var nome = ' Mônica Zungalo Quintal '
+document.write('-' + nome.trim() + '-')
+// resultado -Mônica Zungalo Quintal-
+~~~
+
+
+<div id="aula36" align="center">
+  <h2>Aula 36: Funções nativas para tarefas matemáticas.</h2>
 </div>

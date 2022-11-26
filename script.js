@@ -7,7 +7,9 @@
 document.getElementById('nome').value = 'Oi'
 */
 
-/* atividade para fixação 
+
+
+/* --------------------- atividade para fixação ---------------------
 
 //parâmetros
 var nome = prompt('Informe seu nome:')
@@ -47,6 +49,8 @@ if (imc < 16) {
 
 alert(nome + " possui índice de massa corporal igual a " + imc.toFixed(2) + ", sendo classificado como: " + classificacao + "." ) */
 
+
+
 /*
 function soma(a, b) {
 	return a + b
@@ -55,8 +59,9 @@ function soma(a, b) {
 document.write(soma(7, 7, 9, 15))
 */
 
-/*
-estudo escopo
+
+
+/* --------------------- estudo escopo --------------------- 
 
 var serie = 'Friends'
 
@@ -78,9 +83,12 @@ function x(){
 x() 
 
 document.write('<br />')
-document.write(serie3) //não renderiza */
+document.write(serie3) //não renderiza  */
 
-/* funções de callback */
+
+
+/* --------------------- funções de callback --------------------- 
+
 function exibirArtigo(id, callbackSucesso, callbackErro) {
   //lógica: recuperar o id via requisição http
   if (true) {
@@ -101,3 +109,17 @@ var callbackErro = function(erro) {
 }
 
 exibirArtigo(1, callbackSucesso, callbackErro)
+*/
+
+/* --------------------- funções nativas para manipular strings --------------------- */
+
+var nome = ' Mônica Zungalo Quintal '
+
+document.write(nome.length + '<br>')
+document.write(nome.charAt(3) + '<br>')
+document.write(nome.indexOf('a') + '<br>')
+document.write(nome.replace('Zungalo Quintal', 'estudante de DS') + '<br>')
+document.write(nome.substr(15, 7) + '<br>')
+document.write('Mônica Zungalo Quintal'.toLowerCase() + '<br>')
+document.write('Mônica Zungalo Quintal'.toUpperCase() + '<br>')
+document.write('-' + nome.trim() + '-')

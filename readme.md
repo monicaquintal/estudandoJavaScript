@@ -11,7 +11,7 @@
 <a href="#aula01">O que é JS?</a> | 
 <a href="#aula02">Introdução</a> | 
 <a href="#aula03">Local e Externo</a> | 
-<a href="#aula04">Precedência de execução</a> |  
+<a href="#aula04">Precedência de execução</a> |
 <a href="#aula05">Comentários</a> | 
 <a href="#aula06">Variáveis (introdução)</a> | 
 <a href="#aula07">Variáveis (prática)</a> | 
@@ -45,6 +45,7 @@
 <a href="#aula31">Funções (parâmetros)</a> |
 <a href="#aula32">Escopo de variáveis</a> |
 <a href="#aula33">Funções anônimas e técnica de wrapper</a> |
+<a href="#aula34">Funções de callback</a> |
 </div>
 
 <hr>
@@ -804,4 +805,35 @@ function x() {
 
 <div id="aula33" align="center">
   <h2>Aula 33: Funções anônimas e técnica de wrapper.</h2>
+</div>
+
+### Funções anônimas:
+- não possuem nome;
+- sintaxe e funcionamento são iguais aos de uma função comum;
+- para criá-la, utilizar a palavra reservada function, seguida de parênteses e chaves;
+- para chamá-la, utilizar o conceito de wrapper.
+
+~~~javascript
+function () {
+  document.write('Olá ' + nome + ', tudo bem?)
+}
+~~~
+
+### Técnica de wrapper:
+O JS tem a capacidade de associar a uma variável não apenas strings, valores booleanos e numéricos. Podemos associar também funções!
+
+Exemplo:
+~~~javascript
+var exibirSaudacao = function () {
+  document.write('Olá ' + nome + ', tudo bem?)
+}
+
+exibirSaudacao()
+~~~
+
+Ou seja, a variável passar a guardar uma referência para a função!
+
+
+<div id="aula34" align="center">
+  <h2>Aula 34: Funções de callback.</h2>
 </div>

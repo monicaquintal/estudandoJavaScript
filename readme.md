@@ -6,6 +6,8 @@
 </div>
 
 <div align="justify">
+
+## Introdução ao JavaScript
 <a href="#aula01">O que é JS?</a> | 
 <a href="#aula02">Introdução</a> | 
 <a href="#aula03">Local e Externo</a> | 
@@ -18,6 +20,8 @@
 <a href="#aula10">Variáveis null e undefined</a> | 
 <a href="#aula11">Alterando valores de variáveis</a> |
 <a href="#aula12">Revisão e desafio</a> |
+
+## Estruturas Condicionais
 <a href="#aula13">If/else parte 1 - introdução</a> |
 <a href="#aula14">Operadores Condicionais</a> |
 <a href="#aula15">If/else parte 2 - praticando</a> |
@@ -34,10 +38,13 @@
 <a href="#aula26">Operações aritméticas na atribuição de valores</a> |
 <a href="#aula27">Precedência operações aritméticas</a> |
 <a href="#aula28">Atividades de fixação</a> |
+
+## Funções
 <a href="#aula29">Funções (intro)</a> |
 <a href="#aula30">Funções (prática)</a> |
 <a href="#aula31">Funções (parâmetros)</a> |
 <a href="#aula32">Escopo de variáveis</a> |
+<a href="#aula33">Funções anônimas e técnica de wrapper</a> |
 </div>
 
 <hr>
@@ -740,4 +747,61 @@ Caso não passemos parâmetro nenhum, teremos undefined + undefined, resultando 
 
 <div id="aula32" align="center">
   <h2>Aula 32: Escopo de variáveis.</h2>
+</div>
+
+O JS possui 3 escopos:
+
+1. Global: 
+    - é o script da função como um todo.
+    - podemos ter acesso nos demais escopos, quando a variável é declarada no escopo global.
+
+~~~javascript
+var serie = 'Friends'
+
+if (true) {
+  document.write(serie) //escopo de bloco
+}
+
+function x() {
+  document.write(serie) //escopo da função
+}
+~~~
+
+2. Função
+    - conteúdo inserido dentro de um bloco de função.
+    - funções são subprogramas, definidos entre as chaves {}.
+    - variáveis declaradas no escopo da função nao sofrem hoisting (não sofrem elevação pro escopo global); as variáveis ficam disponíveis APENAS no escopo da função.
+
+~~~javascript
+function x() {
+  var serie 3 = 'The Office' //escopo da função
+}
+
+document.write(serie3) //escopo global
+
+if (true) {
+  document.write(serie3)
+}
+~~~
+
+3. Bloco
+    - instruções contidas dentro de comandos, como if e switch.
+    - também abrimos e fechamos chaves para instruir os comandos.
+    - variáveis declaradas dentro do escopo do bloco são elevadas (HOISTING) para o escopo global! Ou seja, também fica disponível no escopo da função.
+
+~~~javascript
+if (true) {
+  var serie2 = 'Game of Thrones'
+}
+
+document.write(serie2) //escopo global
+
+function x() {
+  document.write(serie2) //escopo da função
+}
+~~~
+
+
+<div id="aula33" align="center">
+  <h2>Aula 33: Funções anônimas e técnica de wrapper.</h2>
 </div>

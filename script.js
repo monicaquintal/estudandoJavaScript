@@ -47,8 +47,35 @@ if (imc < 16) {
 
 alert(nome + " possui índice de massa corporal igual a " + imc.toFixed(2) + ", sendo classificado como: " + classificacao + "." ) */
 
+/*
 function soma(a, b) {
 	return a + b
 }
 
 document.write(soma(7, 7, 9, 15))
+*/
+
+/*
+estudo escopo
+
+var serie = 'Friends'
+
+if(true){
+	var serie2 = 'Game of Thrones'
+	document.write(serie)
+}
+
+document.write(serie2)
+
+document.write('<br />')
+
+function x(){
+	var serie3 = 'The Walking Dead'
+	document.write(serie)
+	document.write(serie2)
+}
+
+x() 
+
+document.write('<br />')
+document.write(serie3) //não renderiza */

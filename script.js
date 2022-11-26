@@ -47,3 +47,8 @@ if (imc < 16) {
 
 alert(nome + " possui índice de massa corporal igual a " + imc.toFixed(2) + ", sendo classificado como: " + classificacao + "." ) */
 
+function soma(a, b) {
+	return a + b
+}
+
+document.write(soma(7, 7, 9, 15))

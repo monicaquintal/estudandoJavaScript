@@ -37,6 +37,7 @@
 <a href="#aula29">Funções (intro)</a> |
 <a href="#aula30">Funções (prática)</a> |
 <a href="#aula31">Funções (parâmetros)</a> |
+<a href="#aula32">Escopo de variáveis</a> |
 </div>
 
 <hr>
@@ -703,4 +704,40 @@ As funções não precisam ser declaradas antes das suas respectivas chamadas. Q
 
 <div id="aula31" align="center">
   <h2>Aula 31: Funções - Flexibilidade de parâmetros.</h2>
+</div>
+
+Mesmo estabalecendo os parâmetros que uma função recebe (que constituem sua assinatura), não necessariamente esses parâmetros precisam ser passados. Isso é uma particularidade do JS!
+
+Exemplo:
+
+~~~javascript
+function soma(a, b) {
+	return a + b
+}
+
+document.write(soma(7, 7, 9, 15))
+~~~
+
+O JS descarta os demais parâmetros, caso sejam fornecidos mais do que os esperados, como no caso acima. Nessa situação, o resultado é 14 (soma dos dois primeiros valores).
+
+Se, por acaso, chamar a função atribuindo apenas um parâmetro, aquele que não foi informado será considerado undefined. No caso acima, seria a soma do valor 7 com undefined, resultando em "not a number" (NaN).
+
+É possível corrigir esse problema, se for previsto dentro da nossa aplicação. Para tal: 
+
+~~~javascript
+function soma(a, b) { 
+  b = b === undefined ? 0 : b
+	return a + b
+}
+
+document.write(soma(7))
+~~~
+
+Na situação acima, através do operador ternário, lemos: b equilave a undefined? se sim, b = 0; se não, utilizar o valor de b. Assim, solucionamos o problema.
+
+Caso não passemos parâmetro nenhum, teremos undefined + undefined, resultando em NaN.
+
+
+<div id="aula32" align="center">
+  <h2>Aula 32: Escopo de variáveis.</h2>
 </div>

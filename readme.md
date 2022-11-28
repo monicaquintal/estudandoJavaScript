@@ -48,6 +48,7 @@
 <a href="#aula34">Funções de callback</a> |
 <a href="#aula35">Funções nativas para manipular strings</a> |
 <a href="#aula36">Funções nativas para tarefas matemáticas</a> |
+<a href="#aula37">Funções nativas para manipular datas</a> |
 </div>
 
 <hr>
@@ -945,4 +946,51 @@ document.write('-' + nome.trim() + '-')
 
 <div id="aula36" align="center">
   <h2>Aula 36: Funções nativas para tarefas matemáticas.</h2>
+</div>
+
+Recomendado o acesso à [Documentação no site do W3schools](https://www.w3schools.com/js/) para ter acesso à relação de propriedades, atributos e métodos (clicar em JS Math).
+
+### Função Math.ceil():
+
+Força o arredondamento sempre para cima, independente da fração.
+
+~~~javascript
+var x = Math.ceil(10.380)
+document.write(x)
+// o resultado obtido será '11'
+~~~
+
+### Função Math.floor():
+
+Força o arredondamento sempre para baixo, independente da fração.
+
+~~~javascript
+var x = Math.floor(10.380)
+document.write(x)
+// o resultado obtido será '10'
+~~~
+
+
+### Função Math.round():
+
+Caso seja necessário algo mais dinâmico, em que o arredondamento seja feito através de uma média. Leva em consideração o peso da fração, para determinar se arredonda para cima ou para baixo.
+
+~~~javascript
+var x = Math.round(10.380)
+document.write(x)
+// o resultado obtido será '10'
+~~~
+
+### Método random()
+
+Fornece um n°. aleatório (randômico) entre 0 e 1.
+
+~~~ javascript
+var x = Math.random()
+document.write(x)
+~~~
+
+
+<div id="aula37" align="center">
+  <h2>Aula 37: Funções nativas para manipular datas.</h2>
 </div>

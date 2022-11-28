@@ -111,7 +111,7 @@ var callbackErro = function(erro) {
 exibirArtigo(1, callbackSucesso, callbackErro)
 */
 
-/* --------------------- funções nativas para manipular strings --------------------- */
+/* --------------------- funções nativas para manipular strings --------------------- 
 
 var nome = ' Mônica Zungalo Quintal '
 
@@ -122,4 +122,19 @@ document.write(nome.replace('Zungalo Quintal', 'estudante de DS') + '<br>')
 document.write(nome.substr(15, 7) + '<br>')
 document.write('Mônica Zungalo Quintal'.toLowerCase() + '<br>')
 document.write('Mônica Zungalo Quintal'.toUpperCase() + '<br>')
-document.write('-' + nome.trim() + '-')
+document.write('-' + nome.trim() + '-') */
+
+/* --------------------- funções nativas para tarefas matemáticas --------------------- 
+
+var x = Math.ceil(10.380)
+document.writeln(x)
+
+var x = Math.floor(10.380)
+document.writeln(x)
+
+
+var x = Math.round(10.380)
+document.writeln(x)
+
+var x = Math.random()
+document.write(x) */

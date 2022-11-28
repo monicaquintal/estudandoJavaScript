@@ -49,6 +49,7 @@
 <a href="#aula35">Funções nativas para manipular strings</a> |
 <a href="#aula36">Funções nativas para tarefas matemáticas</a> |
 <a href="#aula37">Funções nativas para manipular datas</a> |
+<a href="#aula38">Praticando um pouco mais com datas</a> |
 </div>
 
 <hr>
@@ -993,4 +994,69 @@ document.write(x)
 
 <div id="aula37" align="center">
   <h2>Aula 37: Funções nativas para manipular datas.</h2>
+</div>
+
+Recomendado o acesso à [Documentação no site do W3schools](https://www.w3schools.com/js/) para ter acesso à relação de propriedades e métodos (clicar em JS Date).
+
+O Date é um objeto que precisa ser instanciado. Para isso, cria-se uma variável, e a ela é atribuída uma nova instância ao objeto Date, como a seguir:
+
+~~~javascript
+var data = new Date()
+~~~
+
+O operador "new Date()" faz com que um novo objeto de data seja criado e atribuído a uma variável. A partir dessa variável, temos acesso a um objeto que contém todos os detalhes de datas do momento da instância do objeto - naquele momento em que nós criamos a instrução new Date(). 
+
+Todas essas informações de datas são criadas com base na data do Sistema Operacional aonde o browser está rodando - o JS solicita parâmetros de data pro browser, que solicita ao SO. Se o usuário alterar hora e data em sua máquina, o objeto se baseará nesses dados.
+
+Geralmente informações de data são armazenadas em BD, de modo que a complexidade é menor e a segurança se torna maior, porque a informação já vem trabalhada para ser exibida no front-end.
+
+### Método getDate():
+
+Recupera o dia do mês em que estamos (de 1 a 31).
+
+~~~javascript
+var data = new Date()
+
+document.write(data.getDate())
+~~~
+
+### Método getMonth():
+
+Recupera o mês em que estamos (considera os meses de 0 a 11). Lembrar de somar 1 unidade ao valor de retorno, para ajustar a forma de exibição do mês;
+
+~~~javascript
+var data = new Date()
+
+document.write(data.getMonth() + 1)
+~~~
+
+### Método getFullYear():
+
+Recupera o ano em que estamos.
+
+~~~javascript
+var data = new Date()
+
+document.write(data.getFullYear())
+~~~
+
+### ➕ Concatenando:  
+
+~~~javascript
+var data = new Date()
+
+document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+~~~
+
+### Observação:
+
+Um detalhe importante sobre o objeto Date é ue ele também possui métodos para configuração dos seus respectivos valores.
+
+Os **métodos "get"** sãu utilizados para recuperar dados, enquanto os **métodos "set"** são utilizados para setar dados.
+
+Assim, podemos criar objetos diversos do tipo Date, e utilizá-los para realizar cálculos.
+
+
+<div id="aula38" align="center">
+  <h2>Aula 38: Praticando um pouco mais com datas.</h2>
 </div>

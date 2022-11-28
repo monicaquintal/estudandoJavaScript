@@ -138,3 +138,15 @@ document.writeln(x)
 
 var x = Math.random()
 document.write(x) */
+
+
+/* --------------------- funções nativas para manipular datas --------------------- */
+var data = new Date()
+
+document.write(data.getDate() + '/')
+
+document.write(data.getMonth() + 1 + '/')
+
+document.write(data.getFullYear() + '<br>')
+
+document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())

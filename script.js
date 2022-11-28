@@ -269,3 +269,8 @@ function calc(num1, num2, operacao){
 
 document.write('O resultado é: ' + calc(num1, num2, operacao));
 */
+
+
+
+/* --------------------- eventos - mouse --------------------- */
+

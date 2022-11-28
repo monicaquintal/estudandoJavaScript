@@ -54,8 +54,8 @@
 
 ## Eventos e DOM
 <a href="#aula40">Eventos parte 1 - Introdução</a> |
-</div>
 <a href="#aula41">Eventos parte 2 - Mouse</a> |
+<a href="#aula41">Eventos parte 3 - Teclado</a> |
 </div>
 
 <hr>
@@ -1181,16 +1181,16 @@ var resultado = ""
 
 function Calcular(numero1, numero2, operacao) {
 
-	numero1 = parseFloat(numero1)
-	numero2 = parseFloat(numero2)
+numero1 = parseFloat(numero1)
+numero2 = parseFloat(numero2)
 
-	if (operacao == "soma") {
-		resultado = numero1 + numero2 
-	} else if ( operacao == "subtracao") {
-		resultado = numero1 - numero2
-	} else {
-		alert('Informe dois valores, e indique a operação a ser realizada.')
-	}
+if (operacao == "soma") {
+	resultado = numero1 + numero2 
+} else if ( operacao == "subtracao") {
+	resultado = numero1 - numero2
+} else {
+	alert('Informe dois valores, e indique a operação a ser realizada.')
+}
 }
 
 alert("O resultado é: " + Calcular(numero1, numero2, operacao))
@@ -1209,4 +1209,54 @@ Com isso, podemos disparar a realização de lógicas a partir da interação do
 
 <div id="aula41" align="center">
   <h2>Aula 41: Eventos parte 2 - Mouse.</h2>
+</div>
+
+Inicialmente, precisamos criar um elemento HTML para atribuir um evento cujo disparo se dê a partir da utilização do mouse.
+
+Os elementos são declarados no HTML usando a sintaxe de propriedade.
+
+Principais eventos que podem ser capturados pelo JS a partir do uso do mouse:
+
+### onclick:
+
+Acionado quando o elemento é clicado.
+
+~~~javascript
+<script>
+function acao() {
+ alert("Evento disparado!")
+}
+</script>
+
+<body>
+<div onclick="acao()" style="background: #ccc; height: 150px; width: 250px"></div>
+</body>
+~~~
+
+No caso dos demais Eventos, apenas trocar a propriedade atribuída à div, conforme o exemplo acima.
+
+### ondblclick:
+
+Acionado quando o elemento é clicado duas vezes.
+
+### onmouseup:
+
+Acionado quando o clique sobre determinado elemento é liberado.
+
+### onmouseover:
+
+Acionado quando o cursor do mouse sobrepõe o elemento.
+
+### onmouseout:
+
+Acionado quando o cursor do mouse sai da região da página ocupada pelo elemento.
+
+### Importante:
+
+Esses eventos podem ser combinados!
+E nem todos os eventos estão disponíveis para todos os elementos HTML. Consultar a documentação (acessar a [Documentação no site do W3schools](https://www.w3schools.com/js/), em DOM Events > HTML DOM Events).
+
+
+<div id="aula41" align="center">
+  <h2>Aula 42: Eventos parte 3 - Teclado.</h2>
 </div>

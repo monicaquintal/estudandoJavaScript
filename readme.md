@@ -1111,39 +1111,39 @@ Podemos também trabalhar adicionando/removendo meses e anos (utilizando getMont
 6. Imprimir o resultado.
 
 ~~~javascript
-	//24/07/2020
-	var data1 = new Date(2020, 6, 24)
+//24/07/2020
+var data1 = new Date(2020, 6, 24)
 
-	//27/11/2022
-	var data2 = new Date(2022, 10, 27)
+//27/11/2022
+var data2 = new Date(2022, 10, 27)
 
-	document.write(data1.toString())
-	document.write('<hr />')
-	document.write(data2.toString())
+document.write(data1.toString())
+document.write('<hr />')
+document.write(data2.toString())
 
-	document.write('<br /><br /><hr />')
+document.write('<br /><br /><hr />')
 
-	//converter as datas para valores numéricos (possíveis de usar em cálculos)
-	document.write(data1.getTime())
-	document.write('<hr />')
-	document.write(data2.getTime())
-  document.write('<br /><br /><hr />')
+//converter as datas para valores numéricos (possíveis de usar em cálculos)
+document.write(data1.getTime())
+document.write('<hr />')
+document.write(data2.getTime())
+document.write('<br /><br /><hr />')
 
-	//calcula-se com base em 1 de janeiro de 1970 - padrão computacional, parâmetro para que possamos fazer cálculos na nossa aplicação
+//calcula-se com base em 1 de janeiro de 1970 - padrão computacional, parâmetro para que possamos fazer cálculos na nossa aplicação
 
-	//encontar a quantidade de milissegundos entre data1 e data2
-	var milissegundosEntreDatas = Math.abs(data1.getTime() - data2.getTime())
-	document.write(milissegundosEntreDatas)
-	document.write('<br /><br /><hr />')
+//encontar a quantidade de milissegundos entre data1 e data2
+var milissegundosEntreDatas = Math.abs(data1.getTime() - data2.getTime())
+document.write(milissegundosEntreDatas)
+document.write('<br /><br /><hr />')
 
-	//1 dia tem 24 horas, cada hora tem 60 minutos, cada minuto tem 60 segundos e cada segundo tem 1000 milissegundos
+//1 dia tem 24 horas, cada hora tem 60 minutos, cada minuto tem 60 segundos e cada segundo tem 1000 milissegundos
 
-	//então quantos milissegundos existem em um dia?
-	var milissegundosPorDia = (1*24*60*60*1000)
-	document.write(' 1 dia tem: ' + milissegundosPorDia + ' milissegundos' )
+//então quantos milissegundos existem em um dia?
+var milissegundosPorDia = (1*24*60*60*1000)
+document.write(' 1 dia tem: ' + milissegundosPorDia + ' milissegundos' )
 
-	document.write('<br /><br /><hr />')
-	document.write('A diferença entre data1 e data2 é de ' + Math.ceil(milissegundosEntreDatas / milissegundosPorDia) + ' dia(s)')
+document.write('<br /><br /><hr />')
+document.write('A diferença entre data1 e data2 é de ' + Math.ceil(milissegundosEntreDatas / milissegundosPorDia) + ' dia(s)')
 
 ~~~
 

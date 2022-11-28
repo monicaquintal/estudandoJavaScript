@@ -50,6 +50,7 @@
 <a href="#aula36">Funções nativas para tarefas matemáticas</a> |
 <a href="#aula37">Funções nativas para manipular datas</a> |
 <a href="#aula38">Praticando um pouco mais com datas</a> |
+<a href="#aula39">Atividades para fixação</a>
 </div>
 
 <hr>
@@ -1050,13 +1051,100 @@ document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFull
 
 ### Observação:
 
-Um detalhe importante sobre o objeto Date é ue ele também possui métodos para configuração dos seus respectivos valores.
+Um detalhe importante sobre o objeto Date é que ele também possui métodos para configuração dos seus respectivos valores.
 
-Os **métodos "get"** sãu utilizados para recuperar dados, enquanto os **métodos "set"** são utilizados para setar dados.
+Os **métodos "get"** são utilizados para recuperar dados, enquanto os **métodos "set"** são utilizados para setar dados.
 
 Assim, podemos criar objetos diversos do tipo Date, e utilizá-los para realizar cálculos.
 
 
 <div id="aula38" align="center">
   <h2>Aula 38: Praticando um pouco mais com datas.</h2>
+</div>
+
+### Adicionar/remover dias da data:
+
+1. utilizar o **método toString()** (converte o objeto data em uma String, uma representação textual da mesma);
+
+2. recuperar a data com o método **setDate()** (seta valores no objeto data) e adicionar a quantidade de dias pretendida no getDate().
+
+Exemplo:
+
+~~~javascript
+var data = new Date()
+
+document.write(data.toString())
+data.setDate(data.getDate() + 1)
+document.write('<hr>')
+document.write(data.toString())
+~~~
+
+Para *remover* dias, trocar o "+" da operação por "-".
+
+O método setDate também tem inteligência para atuar sobre meses e anos (se adicionarmos uma grande quantidade de dias, por exemplo, ele adequará dia, mês e ano).
+
+Podemos também trabalhar adicionando/removendo meses e anos (utilizando getMonth() e getFullYear()).
+
+### Cálculo entre duas datas diferentes:
+
+1. Inicialmente, criar duas variáveis e os objetos que representam as datas.
+
+2. Converter as datas para um valor que possa ser calculado:
+    - utilizar o **método getTime()** para as datas.
+    - esse método recupera a quantidade de milisegundos entre as datas.
+    - calcular a quantidade de milisegundos para cada uma das datas.
+
+3. Calcular a quantidade de milisegundos entre datas 1 e 2.
+    - subtrair uma data da outra.
+    - utilizar o **método Math.abs()** - retorna o valor absoluto de um número (porque não da para dizer que a distância entre um dia e outro é negativa, por exemplo).
+
+4. Converter os milisegundos em dias:
+    - multiplicar um dia por 24 horas, 60 minutos, 60 segundos, 1000 milisegundos -> para obter a quantidade de milisegundos em um dia.
+    - dividir o resultado da diferença de milisegundos entre datas pela quantidade de milisegundos que há em um dia.
+
+5. Realizar o arredondamento da quantidade de dias:
+    - no exemplo, o prof. usou o método Math.ceil() para arredondar para cima.
+
+6. Imprimir o resultado.
+
+~~~javascript
+	//24/07/2020
+	var data1 = new Date(2020, 6, 24)
+
+	//27/11/2022
+	var data2 = new Date(2022, 10, 27)
+
+	document.write(data1.toString())
+	document.write('<hr />')
+	document.write(data2.toString())
+
+	document.write('<br /><br /><hr />')
+
+	//converter as datas para valores numéricos (possíveis de usar em cálculos)
+	document.write(data1.getTime())
+	document.write('<hr />')
+	document.write(data2.getTime())
+  document.write('<br /><br /><hr />')
+
+	//calcula-se com base em 1 de janeiro de 1970 - padrão computacional, parâmetro para que possamos fazer cálculos na nossa aplicação
+
+	//encontar a quantidade de milissegundos entre data1 e data2
+	var milissegundosEntreDatas = Math.abs(data1.getTime() - data2.getTime())
+	document.write(milissegundosEntreDatas)
+	document.write('<br /><br /><hr />')
+
+	//1 dia tem 24 horas, cada hora tem 60 minutos, cada minuto tem 60 segundos e cada segundo tem 1000 milissegundos
+
+	//então quantos milissegundos existem em um dia?
+	var milissegundosPorDia = (1*24*60*60*1000)
+	document.write(' 1 dia tem: ' + milissegundosPorDia + ' milissegundos' )
+
+	document.write('<br /><br /><hr />')
+	document.write('A diferença entre data1 e data2 é de ' + Math.ceil(milissegundosEntreDatas / milissegundosPorDia) + ' dia(s)')
+
+~~~
+
+
+<div id="aula39" align="center">
+  <h2>Aula 39: Atividades para fixação do conteúdo.</h2>
 </div>

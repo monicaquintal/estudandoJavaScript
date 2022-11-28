@@ -51,6 +51,9 @@
 <a href="#aula37">Funções nativas para manipular datas</a> |
 <a href="#aula38">Praticando um pouco mais com datas</a> |
 <a href="#aula39">Atividades para fixação</a>
+
+## Eventos e DOM
+<a href="#aula40">Eventos parte 1 - Introdução</a> |
 </div>
 
 <hr>
@@ -1147,4 +1150,50 @@ Podemos também trabalhar adicionando/removendo meses e anos (utilizando getMont
 
 <div id="aula39" align="center">
   <h2>Aula 39: Atividades para fixação do conteúdo.</h2>
+</div>
+
+### Exercício proposto:
+
+Crie uma aplicação para efetuar cálculo aritméticos de soma e subtração.
+
+Considere os seguintes critérios:
+
+1. Ao executar o script a aplicação deve solicitar a entrada de um número, seguido de uma operação de soma ou subtração e posteriormente seguido de um segundo
+número.
+
+2. A operação deve ser inserida pelo usuário de forma textual, ou seja, quando o sistema solicita a operação o usuário deve informar o texto ‘soma’ ou ‘subtração’ (sem as
+aspas).
+
+3. Na sequência o sistema deve enviar os parâmetros para uma função efetuar o devido cálculo. Exemplo: calculo(num1, num2, operacao).
+
+4. A função deve executar o cálculo com base na operação informada pelo usuário e na sequência deve retornar o valor encontrado.
+5. Ao término o sistema deve fornecer a seguinte saída para o usuário: “O resultado é: &lt;resultado&gt;.”
+
+### Resolução:
+
+~~~javascript
+var numero1 = prompt('Informe um número:')
+var operacao = prompt('Digite a operação desejada - informe "soma" ou "subtração" (sem as aspas)')
+var numero2 = prompt('Informe outro número')
+var resultado = ""
+
+function Calcular(numero1, numero2, operacao) {
+
+	numero1 = parseFloat(numero1)
+	numero2 = parseFloat(numero2)
+
+	if (operacao == "soma") {
+		resultado = numero1 + numero2 
+	} else if ( operacao == "subtracao") {
+		resultado = numero1 - numero2
+	} else {
+		alert('Informe dois valores, e indique a operação a ser realizada.')
+	}
+}
+
+alert("O resultado é: " + Calcular(numero1, numero2, operacao))
+~~~
+
+<div id="aula40" align="center">
+  <h2>Aula 40: Eventos parte 1 - Introdução.</h2>
 </div>

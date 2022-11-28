@@ -153,8 +153,8 @@ document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFull
 */
 
 
-/* --------------------- praticando um pouco mais com datas --------------------- */
-/*
+/* --------------------- praticando um pouco mais com datas --------------------- 
+
 var data = new Date()
 
 	//adicionar / remover dias
@@ -177,7 +177,7 @@ var data = new Date()
 	document.write('<hr />')
 	document.write(data.toString())
 	document.write('<br /><br /><hr />')
-*/
+
 
 	//24/07/2020
 	var data1 = new Date(2020, 6, 24)
@@ -211,4 +211,30 @@ var data = new Date()
 	document.write(' 1 dia tem: ' + milissegundos_por_dia + ' milissegundos' )
 
 	document.write('<br /><br /><hr />')
-	document.write('A diferença entre data1 e data2 é de ' + Math.ceil(milissegundos_entre_datas / milissegundos_por_dia) + ' dia(s)')
+	document.write('A diferença entre data1 e data2 é de ' + Math.ceil(milissegundos_entre_datas / milissegundos_por_dia) + ' dia(s)') */
+
+	
+/* --------------------- atividade para fixação --------------------- */
+
+var numero1 = prompt('Informe um número:')
+var operacao = prompt('Digite a operação desejada - informe "soma" ou "subtracao" (sem as aspas)')
+var numero2 = prompt('Informe outro número')
+var resultado = ""
+
+function Calcular(numero1, numero2, operacao) {
+
+	numero1 = parseFloat(numero1)
+	numero2 = parseFloat(numero2)
+
+	if (operacao == "soma") {
+		resultado = numero1 + numero2 
+	} else if ( operacao == "subtracao") {
+		resultado = numero1 - numero2
+	} else {
+		alert('Informe dois valores, e indique a operação a ser realizada.')
+	}
+
+	return resultado
+}
+
+alert("O resultado é: " + Calcular(numero1, numero2, operacao))

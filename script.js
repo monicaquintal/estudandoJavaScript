@@ -216,6 +216,8 @@ var data = new Date()
 	
 /* --------------------- atividade para fixação --------------------- */
 
+/* minha resolução 
+
 var numero1 = prompt('Informe um número:')
 var operacao = prompt('Digite a operação desejada - informe "soma" ou "subtracao" (sem as aspas)')
 var numero2 = prompt('Informe outro número')
@@ -237,4 +239,33 @@ function Calcular(numero1, numero2, operacao) {
 	return resultado
 }
 
-alert("O resultado é: " + Calcular(numero1, numero2, operacao))
+alert("O resultado é: " + Calcular(numero1, numero2, operacao)) */
+
+
+
+/* resolução do prof 
+
+var num1 = prompt('Digite um número');
+var operacao = prompt('Digite a operação');
+var num2 = prompt('Digite outro número');
+
+function calc(num1, num2, operacao){
+
+ num1 = parseFloat(num1);
+ num2 = parseFloat(num2);
+
+ var resultado = 0;
+
+ if(operacao == 'soma'){
+ resultado = num1 + num2;
+ }
+
+ if(operacao == 'subtracao'){
+ resultado = num1 - num2;
+ }
+
+ return resultado;
+}
+
+document.write('O resultado é: ' + calc(num1, num2, operacao));
+*/

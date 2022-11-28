@@ -55,6 +55,8 @@
 ## Eventos e DOM
 <a href="#aula40">Eventos parte 1 - Introdução</a> |
 </div>
+<a href="#aula41">Eventos parte 2 - Mouse</a> |
+</div>
 
 <hr>
 
@@ -1196,4 +1198,15 @@ alert("O resultado é: " + Calcular(numero1, numero2, operacao))
 
 <div id="aula40" align="center">
   <h2>Aula 40: Eventos parte 1 - Introdução.</h2>
+</div>
+
+É um recurso muito importante do JS, quando executada do lado do cliente (browser).
+
+Os Eventos nos possibilitam capturar ações que são feitas pelo usuário dentro do browser (comportamentos, como clique no teclado, mouse, redimensionamento de tela, carregamento da página, etc).
+
+Com isso, podemos disparar a realização de lógicas a partir da interação do usuário com os elementos da página.
+
+
+<div id="aula41" align="center">
+  <h2>Aula 41: Eventos parte 2 - Mouse.</h2>
 </div>

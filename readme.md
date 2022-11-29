@@ -57,6 +57,7 @@
 <a href="#aula41">Eventos parte 2 - Mouse</a> |
 <a href="#aula42">Eventos parte 3 - Teclado</a> |
 <a href="#aula43">Eventos parte 4 - Janela</a> |
+<a href="#aula44">Eventos parte 5 - Formulários</a> |
 </div>
 
 <hr>
@@ -1291,4 +1292,29 @@ Instante em que a tecla é mantida pressionada. Ao pressionar a tecla, ela será
 
 <div id="aula43" align="center">
   <h2>Aula 43: Eventos parte 4 - Janela.</h2>
+</div>
+
+### 1. onresize:
+
+Acionado quando o frame ou página é redimensionada.
+
+Portanto, esse evento deve ser associado a um elemento HTML que sofra influência da alteração do tamanho da janela. Nesse caso, o elemento é o **body** (encapsula todo o conteúdo).
+
+~~~javascript
+<body onresize = "alert('Evento disparado!')"></body>
+~~~
+
+### 2. onscroll:
+
+Acionado quando o scroll do mouse é acionado.
+
+Associado a qualquer elemento que possua uma barra de rolagem.
+
+~~~javascript
+<body onscroll = "alert('Evento disparado!')"></body>
+~~~
+
+
+<div id="aula44" align="center">
+  <h2>Aula 44: Eventos parte 5 - Formulários.</h2>
 </div>

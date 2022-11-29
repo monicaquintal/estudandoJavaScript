@@ -58,6 +58,7 @@
 <a href="#aula42">Eventos parte 3 - Teclado</a> |
 <a href="#aula43">Eventos parte 4 - Janela</a> |
 <a href="#aula44">Eventos parte 5 - Formulários</a> |
+<a href="#aula45">DOM parte 1 - Introdução</a> |
 </div>
 
 <hr>
@@ -1317,4 +1318,41 @@ Associado a qualquer elemento que possua uma barra de rolagem.
 
 <div id="aula44" align="center">
   <h2>Aula 44: Eventos parte 5 - Formulários.</h2>
+</div>
+
+Grupo de eventos relacionados a formulários.
+
+### 1. onfocus:
+
+Acionado quando o elemento recebe o foco do cursor do mouse (quando clicamos nele).
+
+~~~javascript
+<input onfocus="console.log('teste')" type="text">
+~~~
+
+Nesse caso, o prof. não exemplifica com alert, e sim com console.log, pois o alert causaria um looping (ativarria repetidamente a função).
+
+### 2. onblur:
+
+Acionado quando o elemento perde o foco clicamos em outro ou pressionamos tab).
+
+~~~javascript
+<input onfocus="console.log('recebeu o foco')" onblur="console.log('perdeu o foco')" type="text">
+~~~
+
+### 3. onchange:
+
+Acionado quando o estado do elemento é modificado. É muito utilizado em conjunto com o elemento select.
+
+~~~javascript
+<select onchange="console.log('estado foi modificado')">
+ <option>-- Selecione --</option>
+ <option value="1">Primeira opção</option>
+ <option value="2">Segunda opção</option>
+</select>
+~~~
+
+
+<div id="aula45" align="center">
+  <h2>Aula 45: DOM parte 1 - Introdução.</h2>
 </div>

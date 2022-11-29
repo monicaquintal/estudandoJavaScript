@@ -55,7 +55,8 @@
 ## Eventos e DOM
 <a href="#aula40">Eventos parte 1 - Introdução</a> |
 <a href="#aula41">Eventos parte 2 - Mouse</a> |
-<a href="#aula41">Eventos parte 3 - Teclado</a> |
+<a href="#aula42">Eventos parte 3 - Teclado</a> |
+<a href="#aula43">Eventos parte 4 - Janela</a> |
 </div>
 
 <hr>
@@ -1217,7 +1218,7 @@ Os elementos são declarados no HTML usando a sintaxe de propriedade.
 
 Principais eventos que podem ser capturados pelo JS a partir do uso do mouse:
 
-### onclick:
+### 1. onclick:
 
 Acionado quando o elemento é clicado.
 
@@ -1235,19 +1236,19 @@ function acao() {
 
 No caso dos demais Eventos, apenas trocar a propriedade atribuída à div, conforme o exemplo acima.
 
-### ondblclick:
+### 2. ondblclick:
 
 Acionado quando o elemento é clicado duas vezes.
 
-### onmouseup:
+### 3. onmouseup:
 
 Acionado quando o clique sobre determinado elemento é liberado.
 
-### onmouseover:
+### 4. onmouseover:
 
 Acionado quando o cursor do mouse sobrepõe o elemento.
 
-### onmouseout:
+### 5. onmouseout:
 
 Acionado quando o cursor do mouse sai da região da página ocupada pelo elemento.
 
@@ -1257,6 +1258,37 @@ Esses eventos podem ser combinados!
 E nem todos os eventos estão disponíveis para todos os elementos HTML. Consultar a documentação (acessar a [Documentação no site do W3schools](https://www.w3schools.com/js/), em DOM Events > HTML DOM Events).
 
 
-<div id="aula41" align="center">
+<div id="aula42" align="center">
   <h2>Aula 42: Eventos parte 3 - Teclado.</h2>
+</div>
+
+### 1. onkeydown:
+
+Acionado quando uma tecla é pressionada.
+
+~~~javascript
+<script>
+function acao() {
+ alert("Evento disparado!")
+}
+</script>
+
+<div>
+ <input onkeydown="acao()" type="text">
+</div>
+~~~
+
+O evento é disparado e, só após sua execução, que o caractere digitado é exibido. Permite tratar o caracter antes dele ser exibido.
+
+### 2. onkeypress:
+
+Acionado quando a tecla é liberada. Addim como onkeydown, o evento ocorre antes da apresentação do caracter digitado. A diferença para onkeydown é que a ação é tomada somente quando a tecla pressionada é um caracter.
+
+### 3. onkeyup:
+
+Instante em que a tecla é mantida pressionada. Ao pressionar a tecla, ela será apresentada, e só depois a ação será executada.
+
+
+<div id="aula43" align="center">
+  <h2>Aula 43: Eventos parte 4 - Janela.</h2>
 </div>

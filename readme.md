@@ -1372,3 +1372,67 @@ Cada elemento HTML contido num DOM é chamado de **nó ou node**.
 <div id="aula46" align="center">
   <h2>Aula 46: DOM parte 2 - Selecionando elementos da página.</h2>
 </div>
+
+Para fazer a seleção de elementos (a partir de seus atributos), há alguns métodos na API do DOM, acessíveis a partir do objeto document. São eles:
+
+### 1. getElementById():
+
+Seleciona o elemento HTML a partir da propriedade id. É usaado em 85% dos casos!
+Importante: id é uma identificação única para o elemento; não podemos ter repetições de id!!!
+
+~~~javascript
+<script>
+console.log(document.getElementById("nome_usuario"))
+</script>
+
+<body>
+<input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
+</body>
+~~~
+
+### 2. getElementsByTagName():
+
+Seleciona pelo nome da tag; no caso abaixo, &lt;input&gt;.
+
+~~~javascript
+<script>
+console.log(document.getElementsByTagName("input"))
+</script>
+
+<body>
+<input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
+</body>
+~~~
+
+### 3. getElementsByClassName():
+
+Seleciona elementos pelo atributo classe.
+
+~~~javascript
+<script>
+console.log(document.getElementsByClassName("campo_texto"))
+</script>
+
+<body>
+<input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
+</body>
+~~~
+
+### 4. getElementsByName():
+
+Recupera elementos pelo atributo name.
+
+~~~javascript
+<script>
+console.log(document.getElementsByName("nome"))
+</script>
+
+<body>
+<input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
+</body>
+~~~
+
+
+<div id="aula47" align="center">
+  <h2>Aula 47: DOM parte 3 - Manipulando valores de inputs (text).</h2>
+</div>

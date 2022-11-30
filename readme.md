@@ -59,6 +59,11 @@
 <a href="#aula43">Eventos parte 4 - Janela</a> |
 <a href="#aula44">Eventos parte 5 - Formulários</a> |
 <a href="#aula45">DOM parte 1 - Introdução</a> |
+<a href="#aula46">DOM parte 2 - Selecionando elementos da página</a> |
+<a href="#aula47">DOM parte 3 - Manipulando valores de inputs (text)</a> |
+<a href="#aula48">DOM parte 4 - Manipulando estilos de elementos</a> |
+<a href="#aula49">DOM parte 5 - Manipulando classes de elementos</a> |
+<a href="#aula50">Atividades para fixação do conteúdo</a>
 </div>
 
 <hr>
@@ -1354,5 +1359,16 @@ Acionado quando o estado do elemento é modificado. É muito utilizado em conjun
 
 
 <div id="aula45" align="center">
-  <h2>Aula 45: DOM parte 1 - Introdução.</h2>
+  <h2>Aula 45: DOM parte 1 - Introdução. 🌳</h2>
+</div>
+
+DOM significa ***Document Object Model***. É uma API multiplataforma que permite o acesso via JS aos elementos HTML da página. É através da API do DOM que podemos modificar os elementos HTML.
+
+Todos os elementos HTML, quando interpretados pelo navegador, ficam organizados num objeto document, e essa organização tem a representação análoga à uma árvore, onde os elementos pais encapsulam os filhos, de tal modo a estabelecer trajetos específicos para alcançar cada um destes elementos (estrutura hierárquica). Por isso é comum utilizar o termo ***árvore de elementos de DOM***.
+
+Cada elemento HTML contido num DOM é chamado de **nó ou node**.
+
+
+<div id="aula46" align="center">
+  <h2>Aula 46: DOM parte 2 - Selecionando elementos da página.</h2>
 </div>

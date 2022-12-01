@@ -1434,5 +1434,82 @@ console.log(document.getElementsByName("nome"))
 
 
 <div id="aula47" align="center">
-  <h2>Aula 47: DOM parte 3 - Manipulando valores de inputs (text).</h2>
+  <h2>Aula 47: DOM parte 3 - Manipulando valores de inputs (tipo text 📝).</h2>
+</div>
+
+### Exercício:
+
+Verificar o caractere digitado no input; em caso de letra, vai para o campo "Letras" e, se for número, para o campo "Números".
+
+### Estudando...
+
+1. inicialmente, aplicado o método onkeyup no input, para capturar a entrada de caracteres.
+
+2. adicionada id "entrada" a este input, para utilizá-lo na função distribuiCaracter.
+
+3. atribuir ".value" ao document.getElementById("entrada"), para que retorne o valor digitado no campo.
+
+4. para limpar o campo de digitação, definir o valor como "".
+
+5. switch case; lembrar de comparar o valor com strings ("0", por exemplo), pois a var captura o valor digitado como string.
+
+6. limpar espaços em branco nas extremidades da string através do método trim().
+
+7. criar a condição de 0 a 9 no switch case. O default será todo o restante pois, se o digitado não for número, será enquadrado como letra.
+
+8. atribuir ids aos inputs de letras e numeros, para utilização no switch case.
+
+9. através do getElementById, setar/atribuir o valor (.value) como a variável caracter.
+
+10. podemos, inclusive, em vez de apenas atribuir o valor, utilizar o operador de concatenação (+=), concatenando cada um dos caracteres digitados, ao invés de sobrepor.
+
+### Na prática:
+
+~~~javascript
+<script>
+function distribuiCaracter() {
+ // selecionar o valor digitado
+ var caracter = document.getElementById("entrada").value
+
+ // limpar o campo de digitação
+ document.getElementById("entrada").value = ""
+
+//limpar espaços em branco nas extremidades da string
+caracter.trim()
+
+switch (caracter) {
+ case "0": 
+ case "1": 
+ case "2": 
+ case "3": 
+ case "4": 
+ case "5": 
+ case "6": 
+ case "7": 
+ case "8":
+ case "9": 
+
+// adicionar o caracter no campo referente a números
+document.getElementById("apenas_numeros").value +=  caracter
+break;
+
+default: 
+// adicionar caractere no campo referente a letras
+document.getElementById("apenas_letras").value +=  caracter
+ }
+}
+</script>
+
+<body>
+<input type="text" placeholder="Digite um caracter aqui" onkeyup="distribuiCaracter()" id="entrada">
+<hr>
+<span>Letras:</span>
+<input type="text" id="apenas_letras" disabled="disabled">
+<span>Números:</span>
+<input type="text" id="apenas_numeros" disabled="disabled">
+~~~
+
+
+<div id="aula48" align="center">
+  <h2>Aula 48: DOM parte 4 - Manipulando estilos de elementos.</h2>
 </div>

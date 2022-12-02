@@ -1381,13 +1381,10 @@ Seleciona o elemento HTML a partir da propriedade id. É usaado em 85% dos casos
 Importante: id é uma identificação única para o elemento; não podemos ter repetições de id!!!
 
 ~~~javascript
-<script>
 console.log(document.getElementById("nome_usuario"))
-</script>
 
-<body>
+// em index.html
 <input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
-</body>
 ~~~
 
 ### 2. getElementsByTagName():
@@ -1395,13 +1392,10 @@ console.log(document.getElementById("nome_usuario"))
 Seleciona pelo nome da tag; no caso abaixo, &lt;input&gt;.
 
 ~~~javascript
-<script>
 console.log(document.getElementsByTagName("input"))
-</script>
 
-<body>
+// em index.html
 <input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
-</body>
 ~~~
 
 ### 3. getElementsByClassName():
@@ -1409,13 +1403,10 @@ console.log(document.getElementsByTagName("input"))
 Seleciona elementos pelo atributo classe.
 
 ~~~javascript
-<script>
 console.log(document.getElementsByClassName("campo_texto"))
-</script>
 
-<body>
+//em index.html
 <input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
-</body>
 ~~~
 
 ### 4. getElementsByName():
@@ -1423,11 +1414,9 @@ console.log(document.getElementsByClassName("campo_texto"))
 Recupera elementos pelo atributo name.
 
 ~~~javascript
-<script>
 console.log(document.getElementsByName("nome"))
-</script>
 
-<body>
+// em index.html
 <input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
 </body>
 ~~~
@@ -1466,7 +1455,6 @@ Verificar o caractere digitado no input; em caso de letra, vai para o campo "Let
 ### Na prática:
 
 ~~~javascript
-<script>
 function distribuiCaracter() {
  // selecionar o valor digitado
  var caracter = document.getElementById("entrada").value
@@ -1498,9 +1486,8 @@ default:
 document.getElementById("apenas_letras").value +=  caracter
  }
 }
-</script>
 
-<body>
+// em index.html
 <input type="text" placeholder="Digite um caracter aqui" onkeyup="distribuiCaracter()" id="entrada">
 <hr>
 <span>Letras:</span>
@@ -1516,7 +1503,7 @@ document.getElementById("apenas_letras").value +=  caracter
 
 ### Exercício:
 
-Criar uma página com 3 botões: ao clicar sobre cada um deles, iremos afetar o estilo de uma div.
+Criar uma página com 3 botões: ao clicar sobre cada um deles, iremos afetar o estilo de uma div (modificar o style inline).
 
 ### Praticando: 
 
@@ -1535,16 +1522,13 @@ Criar uma página com 3 botões: ao clicar sobre cada um deles, iremos afetar o 
 ### O código:
 
 ~~~javascript
-<script>
 function modificaEstilo(corDeFundo, l, a){
  document.getElementById('quadrado').style.backgroundColor = corDeFundo     
  document.getElementById('quadrado').style.width = l     
  document.getElementById('quadrado').style.height = a     
 }
-</script>
-</head>
-<body>
 
+// em index.html
 <button type="button" onclick="modificaEstilo('#FF0000', '200px')">Vermelho</button>
 <button type="button" onclick="modificaEstilo('#00FF00', '150px', '20px')">Verde</button>
 <button type="button" onclick="modificaEstilo('#0000FF', '150px', '200px')">Azul</button>
@@ -1555,4 +1539,61 @@ function modificaEstilo(corDeFundo, l, a){
 
 <div id="aula49" align="center">
   <h2>Aula 49: DOM parte 5 - Manipulando classes de elementos.</h2>
+</div>
+
+
+### Proposta:
+
+Aprenderemos a manipular o atributo class, que alterará o estilo visual inicial de um elemento.
+
+### Desenvolvendo:
+
+1. criar estilos 1 e 2 na tag style, bem como seus atributos.
+
+2. criar a div com id="mensagem" no body, e incluir o button.
+
+3. add evento onclick no botão, com evento modificaClasse().
+
+4. na tag script, criar a função modificaClasse(), com document.getElementById "mensagem", utilizando atributo .className e informando a classe que será aplicada no momento que a função for aplicada.
+
+### O código:
+
+1. CSS:
+
+~~~css
+.estilo1 {
+ background: #FF0000;
+ color: #FFF;
+}
+
+.estilo2 {
+ width: 400px;
+ height: 50px;
+ background-color: #FF0000;
+ text-align: center;
+ font-size: 25px;
+ color: #FFF;
+ padding: 25px;
+}
+~~~
+
+2. JavaScript
+
+~~~javascript
+function modificaClasse() {
+ document.getElementById('mensagem').className = 'estilo2'
+}
+~~~
+
+3. HTML
+
+~~~html
+<div id="mensagem" class="estilo1">Modificando a classe do elemento</div>
+<hr />
+<button type="button" onclick="modificaClasse()">Aplicar classe</button>
+~~~
+
+
+<div id="aula50" align="center">
+  <h2>Aula 50: Atividades para fixação do conteúdo.</h2>
 </div>

@@ -1513,3 +1513,46 @@ document.getElementById("apenas_letras").value +=  caracter
 <div id="aula48" align="center">
   <h2>Aula 48: DOM parte 4 - Manipulando estilos de elementos.</h2>
 </div>
+
+### Exercício:
+
+Criar uma página com 3 botões: ao clicar sobre cada um deles, iremos afetar o estilo de uma div.
+
+### Praticando: 
+
+1. criação de 3 botões.
+
+2. criação de uma div onde serão aplicados os estilos.
+
+3. incluído em cada um dos botões a função modificaEstilo(), e passado por parâmetro o código hexadecimal que representa a cor em cada um deles.
+
+4. declarar a função na tag script, com corDeFundo como parâmetro.
+
+5. definido id "quadrado" para a div, que será usada como referência para getElementbyId no script. Incluir **".style.backgroundColor"** ao final, pois acessaremos o atributo style deste elemento, especificamente de background, no caso (usar camel case para se referir ao atributo CSS).
+
+6. recuperar também altura (a) e largura (l), e inclui-los como parâmetros da função.
+
+### O código:
+
+~~~javascript
+<script>
+function modificaEstilo(corDeFundo, l, a){
+ document.getElementById('quadrado').style.backgroundColor = corDeFundo     
+ document.getElementById('quadrado').style.width = l     
+ document.getElementById('quadrado').style.height = a     
+}
+</script>
+</head>
+<body>
+
+<button type="button" onclick="modificaEstilo('#FF0000', '200px')">Vermelho</button>
+<button type="button" onclick="modificaEstilo('#00FF00', '150px', '20px')">Verde</button>
+<button type="button" onclick="modificaEstilo('#0000FF', '150px', '200px')">Azul</button>
+
+<div id="quadrado" style="border: solid 1px #000; width: 100px; height: 100px;"></div>
+~~~
+
+
+<div id="aula49" align="center">
+  <h2>Aula 49: DOM parte 5 - Manipulando classes de elementos.</h2>
+</div>

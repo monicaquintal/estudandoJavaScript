@@ -7,36 +7,12 @@
   <title>Estudando JavaScript!</title>
 
   <script>
-    function distribuiCaracter() {
-      // selecionar o valor digitado
-      var caracter = document.getElementById("entrada").value
-      
-      // limpar o campo de digitação
-      document.getElementById("entrada").value = ""
-
-      //limpar espaços em branco nas extremidades da string
-      caracter.trim()
-      
-      switch (caracter) {
-        case "0": 
-        case "1": 
-        case "2": 
-        case "3": 
-        case "4": 
-        case "5": 
-        case "6": 
-        case "7": 
-        case "8":
-        case "9": 
-          // adicionar o caracter no campo referente a números
-          document.getElementById("apenas_numeros").value +=  caracter
-          break;
-        default: 
-          // adicionar caractere no campo referente a letras
-          document.getElementById("apenas_letras").value +=  caracter
-      }
+    function modificaEstilo(corDeFundo, l, a){
+      document.getElementById('quadrado').style.backgroundColor = corDeFundo     
+      document.getElementById('quadrado').style.width = l     
+      document.getElementById('quadrado').style.height = a     
     }
-  </script>
+    </script>
 
 </head>
 <body>
@@ -45,15 +21,12 @@
     <h1>Curso de JavaScript</h1>
     <p>Seção 8 do Curso Desenvolvimento Web Completo 2022.</p>
   </div>
+    <button type="button" onclick="modificaEstilo('#FF0000', '200px')">Vermelho</button>
+   <button type="button" onclick="modificaEstilo('#00FF00', '150px', '20px')">Verde</button>
+   <button type="button" onclick="modificaEstilo('#0000FF', '150px', '200px')">Azul</button>
+   
+   <div id="quadrado" style="border: solid 1px #000; width: 100px; height: 100px;"></div>
 
-  <input type="text" placeholder="Digite um caracter aqui" onkeyup="distribuiCaracter()" id="entrada">
-  
-  <hr>
-  <span>Letras:</span>
-  <input type="text" id="apenas_letras" disabled="disabled">
-
-  <span>Números:</span>
-  <input type="text" id="apenas_numeros" disabled="disabled">
 
   <!-- aula variáveis :
   <script>

@@ -1597,3 +1597,39 @@ function modificaClasse() {
 <div id="aula50" align="center">
   <h2>Aula 50: Atividades para fixação do conteúdo.</h2>
 </div>
+
+### Enunciado:
+
+Crie um campo &lt;input type="text"&gt; e aplique os seguintes controles com base nos eventos abaixo:
+* No evento de foco modifique o background do input para amarelo.
+* Quando o campo perder o foco, recupere o seu respectivo valor e:
+  * Caso o conteúdo contido no campo tenha menos de 3 caracteres o mesmo deve ter seu background alterado para vermelho.
+  * Caso o conteúdo contido no campo tenha 3 caracteres ou mais o background
+deve ser alterado para verde
+
+### Resolução:
+
+1. HTML
+
+~~~html
+<input id="campo" type="text" onfocus="eventoDeFoco()" onblur="recuperaValor()">
+<button id="teste">Submit</button>
+~~~
+
+2. Javascript
+
+~~~javascript
+function eventoDeFoco() {
+ document.getElementById("campo").style.background = "yellow"
+}
+
+function recuperaValor() {
+ var valor = document.getElementById("campo").value
+
+ if (valor.length < 3) {
+  document.getElementById("campo").style.background = "red"
+ } else {
+  document.getElementById("campo").style.background = "green"
+ }
+}
+~~~

@@ -272,9 +272,9 @@ document.write('O resultado é: ' + calc(num1, num2, operacao));
 
 
 
-/* --------------------- DOM - acessando elementos --------------------- */
+/* --------------------- DOM - acessando elementos --------------------- 
 
 //console.log(document.getElementById("nome_usuario"))
 //console.log(document.getElementsByTagName("input"))
 //console.log(document.getElementsByClassName("campo_texto"))
-console.log(document.getElementsByName("nome"))
+console.log(document.getElementsByName("nome"))*/

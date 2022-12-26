@@ -1654,6 +1654,7 @@ function recuperaValor() {
 
 ~~~javascript
 var lista_frutas = Array ();
+
 lista_frutas[1] = 'banana'
 lista_frutas[2] = 'maçã'
 lista_frutas[3] = 'morango'
@@ -1662,4 +1663,38 @@ lista_frutas[4] = 'uva'
 
 <div id="aula52" align="center">
   <h2>Aula 52: Array básico - Prática.</h2>
+</div>
+
+Trabalhado o mesmo exemplo da aula anterior.
+
+> O índice deve ser único, mas não precisa ser numérico nem sequencial!!!
+
+Também pode ser utilizado abertura e fechamento de colchetes para indicar Array, da seguinte forma:
+
+~~~javascript
+var lista_frutas = [];
+
+lista_frutas[1] = 'banana'
+lista_frutas[2] = 'maçã'
+lista_frutas[3] = 'morango'
+lista_frutas[4] = 'uva'
+~~~
+
+Seja utilizando "Array()" ou "[]", em ambos os casos poderemos **manipular os índices**.  
+
+Há ainda **outras duas formas de escrita** de Arrays, as quais *não permitem a manipulação dos índices* (o JS cria as posições, iniciando no INDICE ZERO). Sâo elas:
+
+~~~javascript
+var lista_frutas = Array('banana', 'maçã', 'morango', 'uva')
+~~~
+
+e
+
+~~~javascript
+var lista_frutas = ['banana', 'maçã', 'morango', 'uva']
+~~~
+
+
+<div id="aula53" align="center">
+  <h2>Aula 53: Extra - diferença entre o atributo length de variáveis do tipo string e array.</h2>
 </div>

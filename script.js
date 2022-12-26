@@ -278,3 +278,6 @@ document.write('O resultado é: ' + calc(num1, num2, operacao));
 //console.log(document.getElementsByTagName("input"))
 //console.log(document.getElementsByClassName("campo_texto"))
 console.log(document.getElementsByName("nome"))*/
+
+/* --------------------- Array básico --------------------- */
+

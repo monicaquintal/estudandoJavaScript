@@ -64,6 +64,17 @@
 <a href="#aula48">DOM parte 4 - Manipulando estilos de elementos</a> |
 <a href="#aula49">DOM parte 5 - Manipulando classes de elementos</a> |
 <a href="#aula50">Atividades para fixação do conteúdo</a>
+
+## Arrays
+<a href="#aula51">Array básico (Introdução)</a> |
+<a href="#aula52">Array básico (Prática)</a> |
+<a href="#aula53">Length string x array</a> |  
+<a href="#aula54">Array multidimensional</a> |
+<a href="#aula55">Métodos de inclusão e exclusão de elementos</a> |
+<a href="#aula56">Método de pesquisa</a> |
+<a href="#aula57">Ordenação de elementos</a> |
+<a href="#aula58">Atividade para fixação de conteúdo</a>
+
 </div>
 
 <hr>
@@ -1633,3 +1644,22 @@ function recuperaValor() {
  }
 }
 ~~~
+
+
+<div id="aula51" align="center">
+  <h2>Aula 51: Array básico - Introdução.</h2>
+</div>
+
+**Arrays** são listas ordenadas; são variáveis que nos permitem relacionar itens associados a índices (também conhecidos como chaves ou posições). Armazena, de forma relacionada, qualquer tipo de coisa.
+
+~~~javascript
+var lista_frutas = Array ();
+lista_frutas[1] = 'banana'
+lista_frutas[2] = 'maçã'
+lista_frutas[3] = 'morango'
+lista_frutas[4] = 'uva'
+~~~
+
+<div id="aula52" align="center">
+  <h2>Aula 52: Array básico - Prática.</h2>
+</div>

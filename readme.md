@@ -1682,7 +1682,7 @@ lista_frutas[4] = 'uva'
 
 Seja utilizando "Array()" ou "[]", em ambos os casos poderemos **manipular os índices**.  
 
-Há ainda **outras duas formas de escrita** de Arrays, as quais *não permitem a manipulação dos índices* (o JS cria as posições, iniciando no INDICE ZERO). Sâo elas:
+Há ainda **outras duas formas de escrita** de Arrays, as quais *não permitem a manipulação dos índices* (o JS cria as posições, iniciando no INDICE ZERO). São elas:
 
 ~~~javascript
 var lista_frutas = Array('banana', 'maçã', 'morango', 'uva')
@@ -1697,4 +1697,13 @@ var lista_frutas = ['banana', 'maçã', 'morango', 'uva']
 
 <div id="aula53" align="center">
   <h2>Aula 53: Extra - diferença entre o atributo length de variáveis do tipo string e array.</h2>
+</div>
+
+O atributo length está disponível para objetos do tipo Array e para variáveis do tipo string.
+
+Em Array, o atributo length conterá a quantidade de elementos dentro do array, desde que sejam indexados por valores numéricos sequenciais, sem intervalo, e que iniciem em zero.
+
+
+<div id="aula54" align="center">
+  <h2>Aula 54: Array multidimensional.</h2>
 </div>

@@ -68,7 +68,7 @@
 ## Arrays
 <a href="#aula51">Array básico (Introdução)</a> |
 <a href="#aula52">Array básico (Prática)</a> |
-<a href="#aula53">Length string x array</a> |  
+<a href="#aula53">Length string x array</a> |
 <a href="#aula54">Array multidimensional</a> |
 <a href="#aula55">Métodos de inclusão e exclusão de elementos</a> |
 <a href="#aula56">Método de pesquisa</a> |
@@ -1706,4 +1706,21 @@ Em Array, o atributo length conterá a quantidade de elementos dentro do array, 
 
 <div id="aula54" align="center">
   <h2>Aula 54: Array multidimensional.</h2>
+</div>
+
+**Arrays multidimensionais** são arrays de arrays. Ou seja, através de uma variável e um índice, poderemos acessar outro Array! Ou seja, podemos encadear outros arrays dentro dos índices.
+
+~~~javascript
+var lista_coisas = Array()
+
+lista_coisas ['frutas'] = Array('banana', 'maçã', 'morango', 'uva')
+lista_coisas ['pessoas'] = Array('João', 'José', 'Maria')
+
+document.write(lista_coisas['frutas'][3])
+document.write(lista_coisas['pessoas'][1])
+~~~
+
+
+<div id="aula55" align="center">
+  <h2>Aula 55: Array - métodos de inclusão e exclusão de elementos.</h2>
 </div>

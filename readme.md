@@ -1971,3 +1971,17 @@ while (<condição>) {
 <div id="aula61" align="center">
   <h2>Aula 61: Estruturas de repetição parte 3 - do while.</h2>
 </div>
+
+Sintaxe:
+~~~javascript
+do {
+  //comandos
+} while (<condição>)
+~~~
+
+Apenas ao término do bloco de códigos é que será lida a condição! Ou seja, o conteúdo das chaves será executado PELO MENOS uma vez!!!
+
+
+<div id="aula62" align="center">
+  <h2>Aula 62: Estruturas de repetição parte 4 - for.</h2>
+</div>

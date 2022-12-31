@@ -1985,3 +1985,19 @@ Apenas ao término do bloco de códigos é que será lida a condição! Ou seja,
 <div id="aula62" align="center">
   <h2>Aula 62: Estruturas de repetição parte 4 - for.</h2>
 </div>
+
+Sintaxe:
+~~~javascript
+for (variável; condição; controle) {
+  //códigos
+}
+~~~
+
+Todas as instruções referentes à condição de parada estão dispostas lado a lado, facilitando sua manutenção e compreensão.
+
+Também podemos utilizar break e continue, assim como incremento e decremento.
+
+
+<div id="aula63" align="center">
+  <h2>Aula 63: Praticando um pouco - Percorrendo e listando itens de Arrays.</h2>
+</div>

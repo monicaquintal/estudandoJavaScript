@@ -1773,3 +1773,45 @@ lista_frutas.shift()
 <div id="aula56" align="center">
   <h2>Aula 56: Array - método de pesquisa.</h2>
 </div>
+
+A pesquisa é utilizada para verificar se um elemento existe ou não e sua posição (índice) e, a partir disso, tomar decisões dentro da lógica de programação.
+
+O método utilizado é o **.indexOf()**.
+
+~~~javascript
+var lista_frutas = Array();
+
+lista_frutas[0] = 'banana'
+lista_frutas[1] = 'maçã'
+lista_frutas[3] = 'morango'
+lista_frutas[4] = 'uva'
+
+console.log(lista_frutas.indexOf('uva'))
+~~~
+
+Retorna o índice em que o elemento está contido (ou ***-1***, caso ele não exista dentro do Array)!
+Podemos utilizar o método "if" para indicar quando o elemento não existe, como no exemplo:
+
+~~~javascript
+var lista_frutas = Array();
+
+lista_frutas[0] = 'banana'
+lista_frutas[1] = 'maçã'
+lista_frutas[3] = 'morango'
+lista_frutas[4] = 'uva'
+
+if (lista_frutas.indexOf('abacaxi') === -1) {
+  console.log('Elemento nao existe!')
+} else {
+  console.log('Elemento existe e está na posição ' + lista_frutas.indexOf('uva'))
+}
+~~~
+
+***IMPORTANTE:*** a pesquisa é case sensitive!!!
+
+E, como observação: podemos criar uma variável auxiliar que armazene "lista_frutas.indexOf('abacaxi')" para tornar o código acima menos verboso. 
+
+
+<div id="aula57" align="center">
+  <h2>Aula 57: Array - ordenação de elementos.</h2>
+</div>

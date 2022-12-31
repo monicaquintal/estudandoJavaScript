@@ -1724,3 +1724,52 @@ document.write(lista_coisas['pessoas'][1])
 <div id="aula55" align="center">
   <h2>Aula 55: Array - métodos de inclusão e exclusão de elementos.</h2>
 </div>
+
+~~~javascript
+var lista_frutas = Array();
+
+lista_frutas[0] = 'banana'
+lista_frutas[1] = 'maçã'
+
+console.log(lista_frutas)
+~~~
+
+1. Inclusão de elementos:
+
+a) Para incluir um elemento no final do Array (na última posição), podemos utilizar um método nativo chamado **.push()**. 
+Exemplo:
+
+~~~javascript
+lista_frutas.push('uva')
+~~~
+
+b) Para incluir um elemento no início do Array (na posição zero), podemos utilizar um método chamado **.unshift()**. 
+Os demais índices serão rearranjados!
+Exemplo:
+
+~~~javascript
+lista_frutas.unshift('uva')
+~~~
+
+3. Exclusão de elementos:
+
+a) Para excluir elementos do final do Array, utilizar o método **.pop()**!
+Como trata-se de uma operação de exclusão, não há necessidade de passar nenhum parâmetro.
+
+~~~javascript
+lista_frutas.pop()
+~~~
+
+b) Para excluir elementos do início do Array, utilizar o método **.shift()**!
+Como trata-se de uma operação de exclusão, não há necessidade de passar nenhum parâmetro.
+
+~~~javascript
+lista_frutas.shift()
+~~~
+
+3. Importante: podemos também utilizar estes métodos de inclusão e exclusão em Arrays multidimensionais!
+
+
+<div id="aula56" align="center">
+  <h2>Aula 56: Array - método de pesquisa.</h2>
+</div>

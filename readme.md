@@ -1857,3 +1857,67 @@ Se os valores do array, apesar de serem strings, representarem valores numérico
   <h2>Aula 58: Atividades para fixação de conteúdo.</h2>
 </div>
 
+### Enunciado:
+
+1. Crie uma aplicação web contendo um campo para entrada de texto (input text) e dois botões (buttons), sendo um botão com a descrição "Adicionar" e outro com a descrição "Ordenar".
+
+2. Após criar os elementos de interação com o usuário acima, crie um Array de nome objetos contendo os seguintes valores:
+
+var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+3. Os próximos passos são:
+
+A) Ao clicar no botão "Adicionar" disparar função que irá:
+
+- Recuperar o valor contido no campo de texto.
+- Verificar se o valor está vazio ou preenchido.
+  - Se vazio, exibir alert com a mensagem "Informe um valor válido".
+  - Se preenchido:
+    - Verificar se o valor informado já existe dentro do Array objetos.
+    - Se existir, exibir alert com a mensagem "Objeto já foi adicionado".
+    - Se não existir:
+      - Incluir o valor preenchido no campo dentro do Array.
+      - Efetuar um console.log do Array para debug (checar se está
+funcionado).
+      - Limpar o valor contido no campo de entrada de texto.
+
+B) Ao clicar no botão "Ordenar" disparar função que irá:
+- Ordenar de forma alfabética os valores do Array de objetos.
+- Efetuar um console.log do Array para debug (checar se está funcionado).
+
+### Resolução:
+
+~~~html
+<input type="text" id="objeto" placeholder="Informe o objeto">
+<button onclick="adicionarObjetos()">Adicionar</button>
+<button onclick="ordenarObjetos()">Ordenar</button>
+~~~
+
+~~~javascript
+var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+function adicionarObjetos() {
+  //recupera o valor inserido no campo id objeto
+  var objeto = document.getElementById('objeto').value
+  //caso possua algum valor preenchido entra no if
+
+  if(objeto != '') { //verifica se o valor já não foi inserido anteriormente
+  //se sim, informa que valor já existe, se não insere novo valor
+    if(objetos.indexOf(objeto) !== -1) {
+      alert('Objeto já foi adicionado')
+    } else {
+      objetos.push(objeto)
+      console.log(objetos)
+      document.getElementById('objeto').value = ''
+    }
+
+  } else {
+  alert('Informe um objeto válido')
+  }
+}
+
+function ordenarObjetos() {
+  objetos.sort()
+  console.log(objetos)
+}
+~~~

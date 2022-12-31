@@ -1951,3 +1951,23 @@ De forma geral, os laços esperam um critério de parada, ou seja, uma instruç�
 <div id="aula60" align="center">
   <h2>Aula 60: Estruturas de repetição parte 2 - while.</h2>
 </div>
+
+Sintaxe:
+~~~javascript
+while (<condição>) {
+  //códigos
+}
+~~~
+
+- condição: estabelece operações de comparação e lógicas, para encontrar "true" ou "false", determinando se permanece ou não no laço de repetição.
+
+- estabelecer um critério de parada bastante convincente, como por exemplo, realizar o incremento de uma unidade ao final do código (i++ ou i += 3, por exemplo).
+
+- podemos utilizar a instrução break para interromper completamente o laço de repetição.
+
+- há também a instrução "continue", que finaliza aquele passo da interação: interrompe o laço e passa para instrução seguinte. Tomar cuidado com esta instrução, pois pode levar a um loop infinito (atentar-se à posição do incremento, por exemplo).
+
+
+<div id="aula61" align="center">
+  <h2>Aula 61: Estruturas de repetição parte 3 - do while.</h2>
+</div>

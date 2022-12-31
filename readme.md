@@ -1783,8 +1783,8 @@ var lista_frutas = Array();
 
 lista_frutas[0] = 'banana'
 lista_frutas[1] = 'maçã'
-lista_frutas[3] = 'morango'
-lista_frutas[4] = 'uva'
+lista_frutas[2] = 'morango'
+lista_frutas[3] = 'uva'
 
 console.log(lista_frutas.indexOf('uva'))
 ~~~
@@ -1797,8 +1797,8 @@ var lista_frutas = Array();
 
 lista_frutas[0] = 'banana'
 lista_frutas[1] = 'maçã'
-lista_frutas[3] = 'morango'
-lista_frutas[4] = 'uva'
+lista_frutas[2] = 'morango'
+lista_frutas[3] = 'uva'
 
 if (lista_frutas.indexOf('abacaxi') === -1) {
   console.log('Elemento nao existe!')
@@ -1815,3 +1815,45 @@ E, como observação: podemos criar uma variável auxiliar que armazene "lista_f
 <div id="aula57" align="center">
   <h2>Aula 57: Array - ordenação de elementos.</h2>
 </div>
+
+O método ***.sort()*** age sobre o Array e faz uma reordenação alfanumérica, com base nos valores dos elementos, ajustando inclusive seus respectivos índices.
+Ele é ESPECÍFICO para ordenação alfanumérica!!!
+
+~~~javascript
+var lista_frutas = Array();
+
+lista_frutas[0] = 'maçã'
+lista_frutas[1] = 'uva'
+lista_frutas[2] = 'banana'
+lista_frutas[3] = 'morango'
+
+console.log(lista_frutas.sort())
+~~~
+
+Para ordenação de Arrays que contêm valores numéricos, precisamos "ensinar" o método .sort() a trabalhar nessa situação.
+Para isso, encaminhar uma função padrão ao método sort, como a seguir:
+
+~~~javascript
+console.log(lista_frutas.sort(ordenaNumeros))
+
+function ordenaNumeros(a, b) {
+  return a - b
+}
+~~~
+
+A função ordenaNumeros é passada como referência, sem a abertura e fechamento de parênteses (pois deve ser executada dentro do método sort para que o resultado seja coerente - recuperará o valor da posição a, que será testada, em comparação com o segundo elemento, na próxima posição - b).
+
+Portanto:
+
+- se &lt; 0: a ordenado antes de b;
+- se &gt; 0: b ordenado antes de a;
+- se a == b, a ordem será mantida;
+- caso haja uma string no meio da lista, por exemplo, a ordenação será indefinida, ocorrendo um erro. 
+
+Se os valores do array, apesar de serem strings, representarem valores numéricos (como lista[1] = "12"), ainda assim poderemos utilizar sort!
+
+
+<div id="aula58" align="center">
+  <h2>Aula 58: Atividades para fixação de conteúdo.</h2>
+</div>
+

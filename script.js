@@ -270,8 +270,6 @@ function calc(num1, num2, operacao){
 document.write('O resultado é: ' + calc(num1, num2, operacao));
 */
 
-
-
 /* --------------------- DOM - acessando elementos --------------------- 
 
 //console.log(document.getElementById("nome_usuario"))

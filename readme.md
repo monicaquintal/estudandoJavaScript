@@ -75,6 +75,18 @@
 <a href="#aula57">Ordenação de elementos</a> |
 <a href="#aula58">Atividade para fixação de conteúdo</a>
 
+## Estrutura de repetição
+
+<a href="#aula59">Introdução</a> | 
+<a href="#aula60">While</a> | 
+<a href="#aula61">Do while</a> | 
+<a href="#aula62">For</a> | 
+<a href="#aula63">Praticando: percorrendo e listando itens de Arrays</a> | 
+<a href="#aula64">Praticando: tabuada</a> | 
+<a href="#aula65">For in</a> | 
+<a href="#aula65">Foreach</a> | 
+<a href="#aula66">Atividade para fixação de conteúdo</a>
+
 </div>
 
 <hr>
@@ -1887,12 +1899,14 @@ B) Ao clicar no botão "Ordenar" disparar função que irá:
 
 ### Resolução:
 
+HTML:
 ~~~html
 <input type="text" id="objeto" placeholder="Informe o objeto">
 <button onclick="adicionarObjetos()">Adicionar</button>
 <button onclick="ordenarObjetos()">Ordenar</button>
 ~~~
 
+JavaScript:
 ~~~javascript
 var objetos = Array('Cadeira', 'Impressora', 'Garfo')
 
@@ -1921,3 +1935,19 @@ function ordenarObjetos() {
   console.log(objetos)
 }
 ~~~
+
+
+<div id="aula59" align="center">
+  <h2>Aula 59: Estrutura de repetição parte 1 - introdução.</h2>
+</div>
+
+### O que são?
+
+Também chamadas de laços ou loops, são estruturas que permitem que façamos a repetição de um comando ou bloco de código, até atender determinada condição.
+
+De forma geral, os laços esperam um critério de parada, ou seja, uma instrução que indica que a repetição ou bloco deve parar de ser reproduzido. Caso isso não ocorra, implicará em um **loop infinito**, resultando no travamento da aplicação.
+
+
+<div id="aula60" align="center">
+  <h2>Aula 60: Estruturas de repetição parte 2 - while.</h2>
+</div>

@@ -1,26 +1,14 @@
-var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+var lista_frutas = Array()
 
-function adicionarObjetos() {
-  //recupera o valor inserido no campo id objeto
-  var objeto = document.getElementById('objeto').value
-  //caso possua algum valor preenchido entra no if
+lista_frutas[0] = 'Banana'
+lista_frutas[1] = 'Maçã'
+lista_frutas[2] = 'Morango'
+lista_frutas[3] = 'Uva'
 
-  if(objeto != '') { //verifica se o valor já não foi inserido anteriormente
-                    //se sim, informa que valor já existe, se não insere novo valor
-    if(objetos.indexOf(objeto) !== -1) {
-      alert('Objeto já foi adicionado')
-    } else {
-      objetos.push(objeto)
-      console.log(objetos)
-      document.getElementById('objeto').value = ''
-    }
+var y = 0
 
-  } else {
-  alert('Informe um objeto válido')
-  }
-}
-
-function ordenarObjetos() {
-  objetos.sort()
-  console.log(objetos)
+while (y < lista_frutas.length) {
+  //ação
+  document.write(lista_frutas[y] + '<br/>')
+  y++ //incremento
 }

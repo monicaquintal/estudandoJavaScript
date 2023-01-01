@@ -2001,3 +2001,27 @@ Também podemos utilizar break e continue, assim como incremento e decremento.
 <div id="aula63" align="center">
   <h2>Aula 63: Praticando um pouco - Percorrendo e listando itens de Arrays.</h2>
 </div>
+
+~~~javascript
+var lista_frutas = Array()
+
+lista_frutas[0] = 'Banana'
+lista_frutas[1] = 'Maçã'
+lista_frutas[2] = 'Morango'
+lista_frutas[3] = 'Uva'
+
+var y = 0
+
+while (y < lista_frutas.length) {
+  //ação
+  document.write(lista_frutas[y] + '<br/>')
+  y++ //incremento
+}
+~~~
+
+A estrutura acima permite recuperar e imprimir os valores contidos nos índices, a partir da estrutura de um laço ( estrutura de repetição while).
+
+
+<div id="aula64" align="center">
+  <h2>Aula 64: Praticando um pouco - Criando uma tabuada de 1 a 10 (laços encadeados).</h2>
+</div>

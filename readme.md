@@ -84,9 +84,7 @@
 <a href="#aula64">Praticando: tabuada</a> | 
 <a href="#aula65">For in</a> | 
 <a href="#aula66">Foreach</a> | 
-<a href="#aula67">Atividade para fixação de conteúdo</a>
-
-##
+<a href="#aula67">Atividade para fixação de conteúdo</a> | 
 <a href="#aula68">Funções - trabalhando com parâmetros variáveis</a> | 
 <a href="#aula69">Tratamento de erros com try, catch, throw e finally</a>
 
@@ -2170,4 +2168,28 @@ while (x <= 10) {
 
 <div id="aula68" align="center">
   <h2>Aula 68: Funções - trabalhando com parâmetros variáveis.</h2>
+</div>
+
+JS possui **flexibilidade de recebimento de parâmetros**; ou seja, mesmo após definição da assinatura da função, podemos encaminhar mais ou menos parâmetros sem que a chamada da função gere um erro na aplicação (o retorno pode ser algo inesperado, mas não quebra!).
+
+Em relação aos **parâmetros variáveis**, podemos passar uma quantidade indefinida de parâmetros, e a função lidar adequadamente com eles.
+
+> console.log(arguments) -> palavra (ou objeto) reservada que recupera a relação de parâmetros passados para a função!
+
+Exemplo:
+
+~~~javascript
+function soma() {
+  var resultado = 0
+  for (var i in arguments) {
+    resultado += arguments[i]
+  }
+  return resultado
+}
+console.log(soma(1, 2, 3, 0.8))
+~~~
+
+
+<div id="aula69" align="center">
+  <h2>Aula 69: Tratamento de erros com try, catch, throw e finally.</h2>
 </div>

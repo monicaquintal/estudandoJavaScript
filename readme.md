@@ -2251,3 +2251,15 @@ getVideo(video)
 <div id="aula70" align="center">
   <h2>Aula 70: BOM - Introdução.</h2>
 </div>
+
+BOM = Browser Object Model!
+API que permite o acesso via JavaScript a recursos do browser.
+
+É uma forma de se comunicar através do JS com recursos do browser propriamente dito, como acessar histórico de navegação, forçar redirecionamento de url ou salvar e recuperar cookies.
+
+Essas ações não estão ligadas a elementos HTML, mas sim a ações disparadas através de recursos do próprio browser!!!
+
+
+<div id="aula71" align="center">
+  <h2>Aula 71: BOM parte 1 - Window.</h2>
+</div>

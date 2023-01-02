@@ -84,9 +84,20 @@
 <a href="#aula64">Praticando: tabuada</a> | 
 <a href="#aula65">For in</a> | 
 <a href="#aula66">Foreach</a> | 
-<a href="#aula67">Atividade para fixação de conteúdo</a> | 
+<a href="#aula67">Atividade para fixação de conteúdo</a>
+
+## Importante
 <a href="#aula68">Funções - trabalhando com parâmetros variáveis</a> | 
 <a href="#aula69">Tratamento de erros com try, catch, throw e finally</a>
+
+## BOM
+<a href="#aula70">Introdução</a> | 
+<a href="#aula71">Window</a> | 
+<a href="#aula72">Screen</a> | 
+<a href="#aula73">Location</a> | 
+<a href="#aula74">Timing</a>
+
+## App Game Mata Mosquito
 
 </div>
 
@@ -2192,4 +2203,51 @@ console.log(soma(1, 2, 3, 0.8))
 
 <div id="aula69" align="center">
   <h2>Aula 69: Tratamento de erros com try, catch, throw e finally.</h2>
+</div>
+
+É muito comum dentro de nossas aplicações existirem trechos de código suscetíveis a erros que geram exceção, ou seja, erros que interrompem o processamento de script, a lógica do algoritmo, fazendo com que a aplicação morra. Nesses casos, o próprio interpretador (browser) dispara para o usuário informações técnicas.
+
+O **Tratamento de erros** consiste em uma técnica que podemos empregar em algumas partes do nosso código para evitar que erros interrompam nossa aplicação.
+
+É um dos pilares para implementação do paradigma de programação reativa.
+
+A) try (tentar)
+B) finally (finalmente) - após try ou catch
+C) catch (pegar) - captura o erro - implementado após try
+D) throw (lançar) - lança exceções nas aplicações; geralmente usado no catch
+
+Exemplo:
+
+~~~javascript
+var video = Array()
+
+video[1] = Array()
+video[1]['nome'] = 'Fullmetal Alchemist'
+video[1]['categoria'] = 'Anime'
+
+function getVideo(video){
+
+  try {
+  //lógica
+  //http
+  console.log(video[0]['nome'])
+  } catch (erro) {
+    tratarErro
+    console.log('Agora sim podemos tratar esse erro')
+    throw new Error('Houve um erro mas não se preocupe, estamos trabalhando nisso agora!')
+  } finally {
+    console.log('Sempre passa por aqui (try / catch)')
+  }
+
+  console.log('A aplicação não morreu')
+}
+function tratarErro(e){
+  console.log(e)
+}
+getVideo(video)
+~~~
+
+
+<div id="aula70" align="center">
+  <h2>Aula 70: BOM - Introdução.</h2>
 </div>

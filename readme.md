@@ -2025,3 +2025,44 @@ A estrutura acima permite recuperar e imprimir os valores contidos nos índices,
 <div id="aula64" align="center">
   <h2>Aula 64: Praticando um pouco - Criando uma tabuada de 1 a 10 (laços encadeados).</h2>
 </div>
+
+Laços encadeados são laços inseridos dentro de outros laços de repetição.
+
+A) Laço simples:
+
+~~~javascript
+for (var x = 1; x <= 10; x++) {
+  document.write('1 x ' + x + ' = ' + (1 * x) + '<br/>')
+}
+
+document.write('<hr/>')
+
+for (var x = 1; x <= 10; x++) {
+  document.write('2 x ' + x + ' = ' + (2 * x) + '<br/>')
+}
+
+(etc, até tabuada do 10)
+~~~
+
+Na situação acima, obtemos como resultado a tabuada de 1 a 10 para o n°. indicado em cada um dos laços.
+Entretanto, teremos um código muito verboso!
+
+B) Laços encadeados:
+
+~~~javascript
+for (var y = 1; y <= 10; y++) {
+
+  for (var x = 1; x <= 10; x++) {
+  document.write(y + ' x ' + x + ' = ' + (y * x) + '<br/>')
+
+  }
+  document.write('<hr/>')
+}
+~~~
+
+Desse modo, obtemos a tabuada de 1 a 10 de forma menos verbosa, mais prática!
+
+
+<div id="aula65" align="center">
+  <h2>Aula 65: Estrutura de repetição parte 5 - For in.</h2>
+</div>

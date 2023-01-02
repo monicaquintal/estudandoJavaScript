@@ -2066,3 +2066,69 @@ Desse modo, obtemos a tabuada de 1 a 10 de forma menos verbosa, mais prática!
 <div id="aula65" align="center">
   <h2>Aula 65: Estrutura de repetição parte 5 - For in.</h2>
 </div>
+
+Sintaxe:
+
+~~~javascript
+for (var x in Array) {
+  //comandos
+}
+~~~
+
+Exemplo:
+
+~~~javascript
+var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
+
+for (var x in listaConvidados) {
+  console.log('Índice ' + x + ' valor ' + listaConvidados[x])
+}
+~~~
+
+No exemplo acima, a variável x vai receber, a cada interação, o valor do indice de cada uma das posições do Array!
+
+O JS executa o laço até que a próxima posição seja undefined, não sendo necessário informar o fim do laço.
+
+É um recurso que permite que naveguemos por elementos do Array que tenham chaves customizadas, não sequenciais (índices não ordenados, de tipos diferentes, por exemplo)!
+
+
+<div id="aula66" align="center">
+  <h2>Aula 66: Estrutura de repetição parte 6 - Foreach.</h2>
+</div>
+
+Em linguagens como PHP, o foreach é um comando de repetição (laço/loop), enquato no JS é uma função que fica abaixo do Prototype do objeto Array (no contexto do JS, é aplicado a Arrays, funcionando como uma função, não exatamente como uma estrutura de repetição). 
+
+O Foreach aguarda como parâmetro uma função de callback (como deve atuar em cada um dos índices do Array).
+
+Sintaxe:
+
+~~~javascript
+var arrayX = ['0', '1', '2', '3']
+
+arrayX.forEach(function(valor, indice, array){
+  //lógica
+})
+~~~
+
+Exemplo:
+
+~~~javascript
+var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+
+listaFuncionarios.forEach(function(valor, indice, array){
+  console.log('índice: ' + indice + ' | valor: ' + valor)
+  console.log(array)
+})
+~~~
+
+Lembrando que é possível não atribuir índice e array, apenas valor (parâmetros variáveis do JS)!
+
+Outro detalhe bastante comum é o fato de que geralmente encaminhamos uma variável que contenha a função de callback como parâmetro ao foreach (em vez de diretamente a função, como no exemplo acima), o que torna o código mais legível.
+
+Foreach funciona apenas em valores numéricos, iniciando em zero (os demais serão ignorados, caso existam)!
+
+
+<div id="aula67" align="center">
+  <h2>Aula 67: Atividades para fixação do conteúdo.</h2>
+</div>
+

@@ -8,3 +8,20 @@ for (var y = 1; y <= 10; y++) {
   document.write('<hr/>')
 
 }
+
+
+
+var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
+
+for (var x in listaConvidados) {
+  console.log('Índice ' + x + ' valor ' + listaConvidados[x])
+}
+
+
+
+var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+
+listaFuncionarios.forEach(function(valor, indice, array){
+  console.log('índice: ' + indice + ' | valor: ' + valor)
+  console.log(array)
+})

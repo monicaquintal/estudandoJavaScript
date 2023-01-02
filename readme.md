@@ -76,7 +76,6 @@
 <a href="#aula58">Atividade para fixação de conteúdo</a>
 
 ## Estrutura de repetição
-
 <a href="#aula59">Introdução</a> | 
 <a href="#aula60">While</a> | 
 <a href="#aula61">Do while</a> | 
@@ -84,8 +83,12 @@
 <a href="#aula63">Praticando: percorrendo e listando itens de Arrays</a> | 
 <a href="#aula64">Praticando: tabuada</a> | 
 <a href="#aula65">For in</a> | 
-<a href="#aula65">Foreach</a> | 
-<a href="#aula66">Atividade para fixação de conteúdo</a>
+<a href="#aula66">Foreach</a> | 
+<a href="#aula67">Atividade para fixação de conteúdo</a>
+
+##
+<a href="#aula68">Funções - trabalhando com parâmetros variáveis</a> | 
+<a href="#aula69">Tratamento de erros com try, catch, throw e finally</a>
 
 </div>
 
@@ -2132,3 +2135,39 @@ Foreach funciona apenas em valores numéricos, iniciando em zero (os demais ser�
   <h2>Aula 67: Atividades para fixação do conteúdo.</h2>
 </div>
 
+1. Baseado no exemplo da aula "Praticando um pouco - Percorrendo e listando itens de
+Arrays", implemente a mesma solução, porém utilizando o comando for.
+
+~~~javascript
+var lista_frutas = ['Banana', 'Maçã', 'Morango', 'Uva']
+
+for (var i = 0; i < lista_frutas.length; i++) {
+  document.write(lista_frutas[i] + '<br/>');
+  console.log(lista_frutas[i])
+}
+~~~
+
+2. Baseado no exemplo da aula "Praticando um pouco - Criando uma tabuada de 1 a 10
+(laços encadeados)", implemente a mesma solução, porém utilizando o comando while.
+
+~~~javascript
+var x = 1;
+var y = 1;
+
+while (x <= 10) {
+  y = 1;
+  while (y <= 10) {
+    console.log(x + ' x ' + y + ' = ' + x * y);
+    document.write(x + ' x ' + y + ' = ' + x * y + '<br/>');
+    y++;
+  }
+  console.log("\n");
+  document.write("<hr/>");
+  x++;
+}
+~~~
+
+
+<div id="aula68" align="center">
+  <h2>Aula 68: Funções - trabalhando com parâmetros variáveis.</h2>
+</div>

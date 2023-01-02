@@ -1,27 +1,27 @@
-for (var y = 1; y <= 10; y++) {
+/* Questão 1 */
 
-  for (var x = 1; x <= 10; x++) {
-  document.write(y + ' x ' + x + ' = ' + (y * x) + '<br/>')
+var lista_frutas = ['Banana', 'Maçã', 'Morango', 'Uva']
 
+for (var i = 0; i < lista_frutas.length; i++) {
+  document.write(lista_frutas[i] + '<br/>');
+  console.log(lista_frutas[i])
+} 
+
+document.write('<hr/>')
+
+/* Questão 2 */
+
+var x = 1;
+var y = 1;
+
+while (x <= 10) {
+  y = 1;
+  while (y <= 10) {
+    console.log(x + ' x ' + y + ' = ' + x * y);
+    document.write(x + ' x ' + y + ' = ' + x * y + '<br/>');
+    y++;
   }
-
-  document.write('<hr/>')
-
+  console.log("\n");
+  document.write("<hr/>");
+  x++;
 }
-
-
-
-var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
-
-for (var x in listaConvidados) {
-  console.log('Índice ' + x + ' valor ' + listaConvidados[x])
-}
-
-
-
-var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
-
-listaFuncionarios.forEach(function(valor, indice, array){
-  console.log('índice: ' + indice + ' | valor: ' + valor)
-  console.log(array)
-})

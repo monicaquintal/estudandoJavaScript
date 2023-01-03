@@ -2263,3 +2263,66 @@ Essas ações não estão ligadas a elementos HTML, mas sim a ações disparadas
 <div id="aula71" align="center">
   <h2>Aula 71: BOM parte 1 - Window.</h2>
 </div>
+
+O window é a janela do browser, onde todo o conteúdo é renderizado.
+
+***Window*** é um objeto formato pelo browser que incorpora a árvore de elementos HTML da página!
+
+alert() é um recurso do window do browser!!!
+
+Na [Documentação da linguagem](https://www.w3schools.com/js/js_window.asp) podemos visualizar os recursos e métodos disponíveis.
+
+Exemplos de métodos:
+
+1. P/ abrir janela:
+~~~html
+<button onclick ="abrirPopUp()">Abrir Janela</button>
+~~~
+
+~~~javascript
+var janela
+
+function abrirPopUp() {
+  janela = window.open('http://www.google.com', 'nova_janela', 'width=200', 'height=100')
+}
+~~~
+
+Sintaxe e alguns parâmetros importantes (porém todos opcionais):
+
+~~~javascript
+window.open(URL, name, space, replace)
+~~~
+
+- URL: especifiica o caminho a ser carregado dentro da nova janela.
+- nome: especifica o atributo nome da janela.
+  - valores aceitos: _blank, _parent, _self, _top.
+- speeds: especificações, como altura e largura, definidos pelo sinal '='.
+
+2. P/ fechar janela:
+
+~~~html
+<button onclick ="fecharPopUp()">Fechar Janela</button>
+~~~
+
+~~~javascript
+var janela //mesma do exemplo 1
+
+function fecharPopUp() {
+  janela.close()
+}
+~~~
+
+**Importante:** Deve-se indicar qual a janela a ser fechada, sendo necessário atribuir a janela a uma variável, para guardar uma referência até ela!
+
+3. Método print:
+
+~~~html
+<button onclick="window.print()">Imprimir página</button>
+~~~
+
+Carrega automaticamente o drive de impressão!
+
+
+<div id="aula72" align="center">
+  <h2>Aula 72: BOM parte 2 - Screen.</h2>
+</div>

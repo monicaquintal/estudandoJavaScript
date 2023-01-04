@@ -2368,3 +2368,36 @@ window.location.href="http://www.google.com"
   <h2>Aula 74: BOM parte 4 - Timing.</h2>
 </div>
 
+Ações serão executadas somente após o tempo determinado.
+
+1. Método setTimeout:
+Executa ação uma única vez após o tempo informado.
+~~~
+setTimeout(<ação>, <tempo em milissegundos>)
+clear Timeout()
+~~~
+
+2. Método setInterval
+Sempre executa a ação (de forma contínua, indeterminada) após o período informado.
+~~~
+setInterval(<ação>, <tempo em milissegundos>)
+clearInterval()
+~~~
+
+Exemplos:
+
+~~~javascript
+setTimeout(function(){document.write('Teste')}, 3000)
+setInterval(function(){document.write('Teste' + '<br />')}, 2000)
+~~~
+
+~~~javascript
+var i = 5
+var x =  setInterval(function() {
+   document.write(i)
+   i--
+   if(i === 0){
+     clearInterval(x)
+   }
+ }, 1000)
+~~~

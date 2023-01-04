@@ -2371,14 +2371,18 @@ window.location.href="http://www.google.com"
 Ações serão executadas somente após o tempo determinado.
 
 1. Método setTimeout:
+
 Executa ação uma única vez após o tempo informado.
+
 ~~~
 setTimeout(<ação>, <tempo em milissegundos>)
 clear Timeout()
 ~~~
 
-2. Método setInterval
+2. Método setInterval:
+
 Sempre executa a ação (de forma contínua, indeterminada) após o período informado.
+
 ~~~
 setInterval(<ação>, <tempo em milissegundos>)
 clearInterval()

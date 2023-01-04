@@ -2352,3 +2352,19 @@ document.write('Largura do navegador é: ' + largura)
 <div id="aula73" align="center">
   <h2>Aula 73: BOM parte 3 - Location.</h2>
 </div>
+
+O objeto Location fornece acesso a atributos e métodos da URL atual, podendo por exemplo forçar redirecionamento ou atualizar a página a partir do método reload.
+
+[Documentação.](https://www.w3schools.com/js/js_window_location.asp)
+
+- window.location.href: permite setar qual URL será retornada ao navegador (redireciona para a URL informada).
+
+~~~javascript
+window.location.href="http://www.google.com"
+~~~
+
+
+<div id="aula74" align="center">
+  <h2>Aula 74: BOM parte 4 - Timing.</h2>
+</div>
+

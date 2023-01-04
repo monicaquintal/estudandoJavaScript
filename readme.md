@@ -2326,3 +2326,29 @@ Carrega automaticamente o drive de impressão!
 <div id="aula72" align="center">
   <h2>Aula 72: BOM parte 2 - Screen.</h2>
 </div>
+
+O objeto Screen fornece acesso a atributos relativos à tela do browser, como informações como altura e largura da parte interna do navegador, onde elementos HTML são renderizados. Também podemos ter a mesma informação considerando a barra de ferramentas e a barra de status.
+
+Podemos , por exemplo, capturar o tamanho da tela disponível pro browser e, com isso, exibir um menu específico, otimizando a exibição.
+
+[Documentação.](https://www.w3schools.com/js/js_window_screen.asp)
+
+- screen.width: fornece o tamanho total da largura.
+- screen.height: fornece o tamanho total da altura.
+- screen.availWidth: fornece acesso às propriedades de largura da tela (excluindo a barra de ferramentas). - APENAS AREA UTIL
+- screen.availHeight: fornece acesso às propriedades de altura da tela (excluindo a barra de ferramentas). - APENAS AREA UTIL
+
+~~~javascript
+var altura = window.screen.availHeight
+var largura = window.screen.availWidth
+
+document.write('Altura do navegador é: ' + altura + "<br/>")
+document.write('Largura do navegador é: ' + largura)
+~~~
+
+(os atributos informam o potencial de altura e largura).
+
+
+<div id="aula73" align="center">
+  <h2>Aula 73: BOM parte 3 - Location.</h2>
+</div>
